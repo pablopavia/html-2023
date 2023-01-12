@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-boxs;
+}
+
+body {
+  margin: 0;
+  margin-left: 20px;
+}
+
+#title {
+  font-weight: 600;
+  padding: 20px;
+  font-size: large;
+}
+
+.father {
+  height: 100%;
+}
+
+#red-box {
+  width: 650px;
+  height: 400px;
+  background-color: red;
+  float: left;
+}
+
+#blue-box {
+  height: 250px;
+  width: 250px;
+  background-color: blue;
+  float: left;
+}
+
+#green-box {
+  height: 250px;
+  width: 250px;
+  background-color: green;
+  float: left;
+}
+
+#yellow-box {
+  height: 250px;
+  width: 250px;
+  background-color: yellow;
+  float: left;
+}
