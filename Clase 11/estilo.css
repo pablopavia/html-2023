@@ -1,0 +1,58 @@
+/* 
+  - Repaso Backgrounds
+  - Multiples backgrounds 
+  - Margin, Border, Padding, Content -> Box Sizing
+
+*/
+
+* {
+  /* box-sizing: border-box; */
+}
+
+body {
+  margin: 0;
+  min-height: 300vh;
+}
+
+header h1 {
+  background-color: lightblue;
+  width: 10vh;
+}
+
+header {
+  padding-top: 20px;
+  background-image: url(wave.jpeg);
+  height: 100vh;
+  min-height: 400px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#uno {
+  background-color: lightblue;
+  height: 300px;
+  padding: 20px;
+  background-image: url(wave2.jpeg);
+  background-size: 300px, cover;
+  background-repeat: repeat-x;
+  background-position: bottom;
+}
+
+#grid {
+  padding: 10px;
+  background-color: brown;
+  overflow: hidden;
+}
+
+.hijo {
+  background-color: lightgreen;
+  height: 300px;
+  width: 50%;
+  float: left;
+}
+
+.hijo:nth-child(2) {
+  background-color: lightcoral;
+}
