@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 180vh;
+  font-family: sans-serif;
+}
+
+nav {
+  height: 125px;
+  width: 100%;
+  background-color: rgb(52, 52, 52);
+  position: fixed;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.head {
+  float: left;
+  font-weight: 600;
+  font-size: x-large;
+  word-spacing: 5px;
+  letter-spacing: 3.5px;
+}
+
+.title {
+  position: relative;
+  top: 40px;
+  left: 150px;
+  color: white;
+  overflow: hidden;
+}
+
+.position {
+  margin-right: 250px;
+  font: bold;
+}
+
+.right-side {
+  float: right;
+  margin: 5px;
+  margin-right: 100px;
+  font-size: large;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.box1 {
+  height: 75vh;
+  width: 100%;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+}
+
+.middle-box {
+  width: 100%;
+  max-width: 1700px;
+  margin: auto;
+  overflow: hidden;
+  margin-top: 280px;
+}
+
+.cortes {
+  width: 33.33%;
+
+  padding: 15px;
+  float: left;
+}
+
+.cards {
+  height: 500px;
+  background-color: rgb(225, 219, 219);
+  border-radius: 3%;
+}
+
+.image {
+  height: 50%;
+  width: 100%;
+  background-image: url('buttons.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 20px;
+}
+
+.texto {
+  height: 50%;
+}
