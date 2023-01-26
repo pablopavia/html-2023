@@ -1,20 +1,136 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-body{
-    margin: 0; height: 675vh;
+body {
+  margin: 0;
+  height: 675vh;
 }
 
-.awesome_app1{
-    background-image: url('imagehtml.jpg');
-    width: 100%;
-    height: 97.3vh;
-    background-size: cover;
+.awesome_app1 {
+  background-image: url('imagehtml.jpg');
+  width: 100%;
+  /* height: 97.3vh; */
+  height: 57.7vh;
+  background-size: cover;
 }
 
-.first-box{
-    background-color: blue;
-    width: 70%;
-    height: 20%;
+.nave {
+  padding-top: 25px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.first-box {
+  height: 70px;
+  /* margin-left: 592px;
+  margin-right: 592px; */
+  max-width: 1140px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.title-logo {
+  background-image: url('logohtml.png');
+  height: 100%;
+  background-size: 50px;
+  background-repeat: no-repeat;
+  position: relative;
+  top: 10px;
+  width: 50px;
+  margin-right: 20px;
+}
+
+.title {
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: 'Dosis', sans-serif, Arial, Helvetica, sans-serif;
+  letter-spacing: 2px;
+}
+
+.box-end {
+  /* margin-left: 450px; */
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  flex-grow: 1;
+  justify-content: end;
+}
+
+.circle {
+  width: 119px;
+  height: 45px;
+  border: 2px solid white;
+  border-radius: 30px;
+}
+
+.circle:hover {
+  background-color: white;
+  color: black;
+}
+
+.title-end {
+  /* margin: 18px; */
+  color: white;
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+}
+.content {
+  text-align: center;
+  position: relative;
+  top: 15px;
+  margin: 0 13px;
+}
+.content2 {
+  font-weight: 700;
+  text-align: center;
+  position: relative;
+  top: 15px;
+}
+
+.second-box {
+  max-width: 1140px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: auto;
+  /* background-color: blue; */
+  height: 600px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+}
+.second-title {
+  font-family: 'Dosis', sans-serif, Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  letter-spacing: 1px;
+  /* margin-top: 30px;
+  margin-bottom: 30px; */
+}
+.row1 {
+  color: white;
+  padding: 15px;
+}
+.row2 {
+  background-image: url('1.jpeg');
+  background-size: 450px;
+  width: 64%;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+.second-p {
+  font-family: 'Roboto', 'Helvetica', Arial, sans-serif;
+  font-size: 15px;
+  margin-bottom: 5px;
+  margin-top: 30px;
 }
