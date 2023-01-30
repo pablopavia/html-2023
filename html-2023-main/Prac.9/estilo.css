@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  height: 675vh;
+  height: 410vh;
 }
 
 .awesome_app1 {
@@ -72,6 +72,7 @@ body {
 .circle:hover {
   background-color: white;
   color: black;
+  cursor: pointer;
 }
 
 .title-end {
@@ -152,6 +153,7 @@ body {
 .circle2:hover {
   background-color: white;
   color: black;
+  cursor: pointer;
 }
 
 .para2 {
@@ -173,7 +175,7 @@ body {
 h4 {
   font-family: 'Dosis', 'Helvetica', Arial, sans-serif;
   font-weight: 600;
-  font-size: 22.4px;
+  font-size: 21.4px;
   margin: 30px 0 0;
   padding: 0 0 24px;
 }
@@ -204,7 +206,7 @@ h4 {
 .icon {
   display: flex;
   margin-top: 24px;
-  margin-right: 60px;
+  margin-right: 50px;
   font-size: 3rem;
   color: orangered;
 }
@@ -277,6 +279,7 @@ h2 {
   font-size: 15px;
   margin-bottom: 5px;
   padding: 0 0 48px;
+  color: #66615b;
 }
 
 .imagery {
@@ -297,4 +300,206 @@ h2 {
 .box {
   width: 25%;
   height: 550px;
+
+  padding: 0 15px;
+}
+.card {
+  text-align: center;
+  box-shadow: #d2d2d2 0px 0px 5px;
+  border-radius: 15px;
+  position: relative;
+  bottom: 0;
+  transition: all 0.25s;
+  overflow: hidden;
+}
+
+.card:hover {
+  position: relative;
+  bottom: 10px;
+  box-shadow: 0 7px 7px #c1bebe;
+}
+
+.column-2 {
+  font-size: 38px;
+  font-family: 'Dosis', 'Helvetica', Arial, sans-serif;
+  font-weight: 600;
+  padding: 25px 5px;
+}
+
+.column-1 {
+  font-size: 18.9px;
+  font-family: 'Dosis', 'Helvetica', Arial, sans-serif;
+  font-weight: 600;
+  line-height: 3.4em;
+  background-color: #f5fafd;
+  height: 65px;
+}
+.columnas-1 {
+  background-color: #f5fafd;
+  color: #6c757d;
+  height: 400px;
+}
+.columnas-2 {
+  line-height: 3;
+  border-bottom: 1px dashed #eee;
+}
+
+span {
+  font-size: 22.4px;
+}
+
+.column-3 {
+  padding-top: 70px;
+  font-size: 13.5px;
+}
+
+.circle-3 {
+  border-width: 2px;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 0.5rem 18px;
+  line-height: 2;
+  cursor: pointer;
+  width: 127px;
+  height: 45px;
+  border: 2px solid rgb(70, 70, 70);
+  border-radius: 30px;
+  color: #66615b;
+  margin-top: 25px;
+  margin-left: 60px;
+  font-family: 'Roboto', 'Helvetica', Arial, sans-serif;
+}
+
+.backgrnd {
+  background: linear-gradient(270deg, #f7395f 0%, #fe702e 100%);
+  color: white;
+}
+
+.circle-4 {
+  border-width: 2px;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 0.5rem 18px;
+  line-height: 2;
+  cursor: pointer;
+  width: 129px;
+  height: 47px;
+  border: 2px solid rgb(254, 254, 254);
+  border-radius: 30px;
+  margin-top: 25px;
+  margin-left: 60px;
+  font-family: 'Roboto', 'Helvetica', Arial, sans-serif;
+}
+
+.bro-2 {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-color: #f1eae0;
+  margin-top: 90px;
+}
+
+.seventh-box {
+  max-width: 1140px;
+  margin: auto;
+  padding: 70px 0;
+  min-height: 800px;
+}
+
+.seventh-columns {
+  border-radius: 12px;
+  box-shadow: rgb(0 0 0 / 15%) 0px 6px 10px -4px;
+  min-height: 300px;
+  padding: 32px;
+  background-color: #f5fafd;
+}
+
+.para-seven {
+  font-family: 'Roboto', 'Helvetica', Arial, sans-serif;
+  font-size: 15px;
+  margin-bottom: 5px;
+  color: #66615b;
+  line-height: 1.5em;
+}
+
+.row-pt2 {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 16px;
+}
+
+.imagen {
+  border-radius: 100%;
+  width: 96px;
+  height: 100px;
+  background-size: cover;
+  background-image: url('user1.jpeg');
+  position: relative;
+  top: 15px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.imagen2 {
+  background-image: url('user2.jpeg');
+  border-radius: 100%;
+  width: 96px;
+  height: 100px;
+  background-size: cover;
+  position: relative;
+  top: 15px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.imagen3 {
+  background-image: url('user3.jpeg');
+  border-radius: 100%;
+  width: 96px;
+  height: 100px;
+  background-size: cover;
+  position: relative;
+  top: 15px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.col-de7 {
+  width: 50%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+h5 {
+  font-size: 17.5px;
+  line-height: 1.4em;
+  color: #111111;
+  font-family: 'Dosis', 'Helvetica', Arial, sans-serif;
+  font-weight: 600;
+}
+
+.ceo {
+  font-size: 13.3px;
+  margin-bottom: 5px;
+  font-family: 'Roboto', 'Helvetica', Arial, sans-serif;
+  color: #6c757d;
+}
+
+.space-7 {
+  width: 33.3333%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.octava-caja {
+  width: 100%;
+  padding: 70px 0;
+  min-height: 400px;
+  background: linear-gradient(270deg, #f7395f 0%, #fe702e 100%);
+}
+
+.last-box {
+  width: 100%;
+  background-color: #252422;
+  min-height: 200px;
 }
