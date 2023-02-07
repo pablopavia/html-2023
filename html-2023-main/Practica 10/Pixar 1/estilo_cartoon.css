@@ -136,18 +136,188 @@ nav {
   padding: 150px 142px;
 }
 .second-box {
-  min-height: 1500px;
+  min-height: 1px;
   width: 100%;
-  background-color: gray;
 }
 
 .row {
   display: flex;
   flex-direction: row;
   width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.spacing {
+.movie {
   width: 25%;
-  height: 33, 33%;
+}
+.image {
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 100%;
+  height: 100%;
+}
+.movie-title {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 17px;
+  margin-bottom: 35px;
+  color: #1d1d1db3;
+}
+.bro {
+  border-bottom: 1px solid rgba(29, 29, 29, 0.7);
+  width: 16%;
+  margin: auto;
+  opacity: 0.4;
+  padding: 17px;
+}
+.third-box {
+  min-height: 350vh;
+  width: 100%;
+}
+
+.description-box {
+  min-height: 1px;
+  width: 100%;
+  margin-top: 35px;
+  padding: 17px;
+}
+
+.desc-image {
+  width: 50%;
+  height: 100%;
+}
+
+.desc-text {
+  padding: 17px;
+  color: #1d1d1db3;
+  width: 50%;
+}
+
+h3 {
+  font-size: 39px;
+}
+
+.row2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.bro2 {
+  width: 100%;
+}
+
+.fourth-box {
+  margin-top: 100px;
+  width: 100%;
+  min-height: 270px;
+  padding: 0px 142px;
+}
+
+.contact {
+  width: 100%;
+  height: 40px;
+}
+
+.contact-position {
+  width: 15%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.hover-box {
+  width: 100%;
+  height: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.hover-box:hover {
+  color: #a2a2a2;
+  transition: all 0.3s;
+}
+
+.hover-box .icon-position:hover {
+  color: #1d1d1d;
+}
+
+.icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.icon-position {
+  margin-left: 12px;
+  cursor: pointer;
+}
+
+.policy {
+  width: 60%;
+  margin: auto;
+  height: 100%;
+  padding-top: 20px;
+}
+
+.policy-text {
+  text-align: center;
+  font-size: 14px;
+}
+
+.policy-style {
+  cursor: pointer;
+  color: #1d1d1d;
+  background: none;
+  letter-spacing: 6px;
+}
+
+.policy-style:hover {
+  color: #a2a2a2;
+  transition: all 0.3s;
+}
+
+.green-box {
+  color: #68b631;
+  border: 1px solid #68b631;
+  height: auto;
+  white-space: normal;
+  word-wrap: break-word;
+  padding: 0.8em 2em;
+  font-size: 0.8em;
+  line-height: 1.2;
+  cursor: pointer;
+  width: 19.5%;
+  margin: auto;
+  height: 20%;
+  background-color: rgb(233, 233, 233);
+  display: flex;
+
+  align-items: center;
+}
+
+.green-box:hover {
+  background-color: #68b631;
+  transition: all 0.2s;
+}
+
+.years {
+  padding-bottom: 15px;
+  letter-spacing: 3px;
+}
+.green-text {
+  font-size: 15px;
+  color: #68b631;
+}
+
+.green-box:hover .green-text {
+  color: white;
+}
+
+@media (max-width: 800px) {
+  .movie {
+    width: 50%;
+  }
 }
