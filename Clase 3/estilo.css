@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+
+#primerDiv {
+  background-color: lightblue;
+  height: 200px;
+  padding: 10px;
+  width: 20%;
+}
+
+#segundoDiv {
+  background-color: coral;
+  padding: 10px;
+  width: 50%;
+}
+
+#primerSpan {
+  background-color: lightgreen;
+  width: 300px;
+  height: 300px;
+}
+
+#segundoSpan {
+  background-color: beige;
+}
+
+#primerParrafo {
+  background-color: lightpink;
+}
+
+#segundoParrafo {
+  background-color: lightblue;
+  padding: 9px;
+}
+
+.fila {
+  background-color: lightgoldenrodyellow;
+  overflow: hidden;
+}
+
+.columna {
+  border: 1px solid black;
+  height: 25px;
+  width: 33.33%;
+  float: left;
+}

@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+
+
+    
+  }
+  
+  h1,
+  h2 {
+    margin: 0;
+  }
+.box{
+    justify-content: center;
+    height: 120vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.position{
+margin: 51px;
+width: 23.333333%;
+}
+
+.box1{
+    background-color: red;
+    animation-name: CRECE;
+    animation-duration: 5s;
+}
+
+.box2{
+    background-color: lightblue;
+
+}
+
+.box3{
+    background-color: yellow;
+}
+
+.box4{
+    background-color: lightgreen;
+}
+
+.box5{
+background-color: orangered;
+}
+
+.box6{
+    background-color: brown;
+   
+}
+
+.center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+@keyframes CRECE {
+
+}

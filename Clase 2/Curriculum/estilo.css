@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* 
+FLOAT: NO RECOMENDADO 
+solo lo vemos las primeras semanas
+*/
+
+#sobreMi {
+  background-color: rgb(42, 42, 42);
+  color: white;
+  width: 30%;
+  float: left;
+  padding: 10px;
+}
+
+#experiencia {
+  width: 70%;
+  float: left;
+  padding: 30px;
+}
+
+.miniyoda {
+  width: 100%;
+  border-radius: 80px;
+}
+
+.floatW50 {
+  float: left;
+  width: 50%;
+}
