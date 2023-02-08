@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 150vh;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+/* 
+
+Clase 24
+
+  - Transformaciones 3D
+  - Transiciones
+  - Perspectiva
+
+*/
+
+.grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 50px;
+}
+.cuadro {
+  background-color: lightblue;
+  margin: 20px;
+  height: 250px;
+  width: 250px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.rotation > .cuadro {
+  transition-property: transform;
+  transition-duration: 0.6s;
+}
+.rotation:hover .cuadro {
+  transform: translate(100px) rotate(45deg);
+}
+
+.rotation3d > .cuadro {
+  transition-duration: 0.6s;
+}
+.rotation3d:hover .cuadro {
+  transform-origin: 2px;
+  transform: rotate3d(2, -1, -1, -0.2turn);
+}
+
+.caja {
+  padding: 20px;
+  width: 300px;
+  background-color: lightgoldenrodyellow;
+  position: relative;
+}
+
+.caja_tapa {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.open-translate {
+  overflow: hidden;
+}
+
+.open-translate .caja_tapa {
+  transition-property: transform;
+  transition-duration: 0.5s;
+}
+
+.open-translate:hover .caja_tapa {
+  transform: translate(100%);
+}
+
+.open-rotate {
+  perspective: 1000px;
+}
+
+.open-rotate .caja_tapa {
+  transform-origin: center bottom;
+  transition-property: transform;
+  transition-duration: 0.5s;
+}
+.open-rotate:hover .caja_tapa {
+  transform: rotateX(-91deg);
+}

@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+#cinco {
+  height: 101vh;
+  background-color: yellow;
+}
+
+#cinco video {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
