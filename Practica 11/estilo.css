@@ -1,67 +1,89 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+.box {
+  width: 100%;
+  min-height: 100px;
+  padding: 5% 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.cuadrado {
+  margin: 5%;
+  width: 20%;
+  aspect-ratio: 1/1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: black;
+  color: aliceblue;
+  align-items: center;
+}
+
+.crece {
+  cursor: pointer;
+  background-color: red;
+}
+.crece:hover {
+  animation-name: crece;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+
+.late {
+  cursor: pointer;
+  background-color: aqua;
+}
+
+.late:hover {
+  animation-name: late;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
+
+.gira {
+}
+
+.sombra {
+}
+
+@keyframes crece {
+  0% {
+    transform: scale(1);
   }
-  
-  body {
-    margin: 0;
 
-
-    
+  50% {
+    transform: scale(1.5);
   }
-  
-  h1,
-  h2 {
-    margin: 0;
+
+  100% {
+    transform: scale(1);
   }
-.box{
-    justify-content: center;
-    height: 120vh;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
 }
 
-.position{
-margin: 51px;
-width: 23.333333%;
-}
+@keyframes late {
+  0% {
+    transform: scale(1);
+  }
 
-.box1{
-    background-color: red;
-    animation-name: CRECE;
-    animation-duration: 5s;
-}
+  50% {
+    transform: scale(1.2);
+  }
 
-.box2{
-    background-color: lightblue;
-
-}
-
-.box3{
-    background-color: yellow;
-}
-
-.box4{
-    background-color: lightgreen;
-}
-
-.box5{
-background-color: orangered;
-}
-
-.box6{
-    background-color: brown;
-   
-}
-
-.center{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    color: white;
-}
-
-@keyframes CRECE {
-
+  100% {
+    transform: scale(1);
+  }
 }
