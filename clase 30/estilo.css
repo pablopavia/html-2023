@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+#container {
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container__card {
+  border: 1px solid black;
+  width: 350px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition-duration: 0.5;
+  transition-property: transform;
+}
+
+.cara-a {
+  line-height: 0;
+  backface-visibility: hidden;
+  transform: rotateY(0deg);
+}
+
+.cara-a__imagen {
+  width: 100%;
+}
+
+.cara-b {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: white;
+  background-color: #ff000088;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+}

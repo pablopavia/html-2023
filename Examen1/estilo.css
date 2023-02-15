@@ -31,11 +31,24 @@ h2 {
   z-index: 1;
   color: white;
 }
+.arrows-position {
+  width: 100%;
+  height: 60px;
+  padding-bottom: 4%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 4;
+}
+
+.arrows {
+  height: 40px;
+  width: 10%;
+  color: white;
+}
 
 .imageinfo-box {
   padding-top: 10%;
-  width: 65%;
-  margin: auto;
   min-height: 100vh;
 }
 
@@ -75,7 +88,6 @@ h2 {
 }
 
 .menu-button {
-  margin-top: 20px;
   background-color: transparent;
   height: 58px;
   width: 17%;
@@ -101,7 +113,8 @@ h2 {
   z-index: 2;
 }
 .welcome-box {
-  width: 65%;
+  width: 100%;
+  max-width: 1200px;
   margin: auto;
   min-height: 50vh;
   padding: 115px 0;
@@ -133,7 +146,8 @@ h2 {
 
 .images-box {
   min-height: 25vh;
-  width: 65%;
+  width: 100%;
+  max-width: 1200px;
   margin: auto;
 }
 
@@ -146,23 +160,33 @@ h2 {
   flex-wrap: wrap;
   align-items: center;
 }
+.image1 {
+  width: 50%;
+}
+.image-style {
+  width: 100%;
+  height: 347px;
+}
 
 .column {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 }
-.pad {
-  padding: 10px;
+
+.image-style2 {
+  width: 100%;
+  height: 700px;
+  padding-left: 30px;
 }
 
-.image3 {
-  position: relative;
-  right: 10px;
+.image2 {
+  width: 50%;
 }
 
 .info {
-  width: 65%;
+  width: 100%;
+  max-width: 1200px;
   margin: auto;
   min-height: 50vh;
   padding: 115px 0;
@@ -178,14 +202,11 @@ h2 {
 .passion {
   width: 50%;
   padding-right: 65px;
-  padding-left: 65px;
 }
 
 .history {
   width: 50%;
-
-  padding-right: 65px;
-  padding-left: 65px;
+  padding-left: 37px;
 }
 
 .para2 {
@@ -195,31 +216,31 @@ h2 {
 }
 
 .prices-box {
-  width: 65%;
+  width: 100%;
+  max-width: 1200px;
   margin: auto;
   min-height: 70vh;
   padding: 60px 0;
 }
 
 .paad {
-  margin-right: 4%;
+  margin-right: 2%;
 }
 
 .imagen1 {
   background-image: url(dish-1-570x690.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 35%;
- min-height: 719px;
+  width: 49%;
+  min-height: 719px;
 }
 
 .imagen2 {
   background-image: url(dish-2-570x690.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 35%;
+  width: 49%;
   min-height: 719px;
-  
 }
 
 .border {
@@ -253,7 +274,8 @@ h2 {
   margin: auto;
 }
 .welcome-box2 {
-  width: 65%;
+  width: 100%;
+  max-width: 1200px;
   margin: auto;
   min-height: 50vh;
   padding: 115px 0;
@@ -275,15 +297,15 @@ h2 {
 
 .menufoods1 {
   width: 50%;
-  padding-top: 5%;
-  padding-right: 5%;
-  padding-left: 5%;
+  padding-top: 2%;
+  padding-right: 2%;
+  padding-left: 2%;
   padding-bottom: 2%;
 }
 
 .menufoods2 {
   width: 50%;
-  padding: 5%;
+  padding: 2%;
 }
 
 .food {
@@ -296,7 +318,7 @@ h2 {
 .row2 {
   display: flex;
   flex-direction: row;
-  justify-content: start;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -307,65 +329,74 @@ h2 {
   margin-top: 15px;
 }
 
-.book-table{
+.book-table {
   background-color: transparent;
   height: 58px;
   min-width: 245px;
 
- border: 1px solid #47475b;
- color: #47475b;
- padding: 15px 60px;
- font-size: 20px;
-letter-spacing: 1.2px;
-transform-origin: 0%;
+  border: 1px solid #47475b;
+  color: #47475b;
+  padding: 15px 60px;
+  font-size: 20px;
+  letter-spacing: 1.2px;
+  transform-origin: 0%;
   transition: all ease 0.25s;
-
 }
 
-.book-table:hover{
-  transform-origin: 100% ;
-  min-width:315px;
+.book-table:hover {
+  transform-origin: 100%;
+  min-width: 315px;
 }
 
-.center-box{
+.center-box {
   display: flex;
   flex-direction: row;
   justify-content: center;
-margin-top: 20px;
+  margin-top: 20px;
 }
 
-.table-box{
-  max-width: 65%;
+.table-box {
+  width: 100%;
+  max-width: 1400px;
   min-height: 100vh;
   margin: auto;
-
 }
 
-.mage1{
-  background-image: url(bakedcresp.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 100vh;
-  width: 50%;
+.mage1 {
+  padding-left: 10px;
+}
+.mage2 {
+  padding-left: 30px;
+}
+.mrgn3 {
+  margin-top: 23px;
 }
 
-.mage2{
-  background-image: url(dish-4-570x330.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 100vh;
-  width: 50%;
+@media (max-width: 990px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .paad {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 2%;
+  }
+
+  .history {
+    padding: 0;
+    text-align: center;
+  }
+  .passion {
+    padding: 0;
+    text-align: center;
+  }
+
+  .bro3 {
+    margin: auto;
+  }
+  .image-style2 {
+    padding: 0;
+  }
 }
-
-.mage3{
-  background-image: url(dish-5-570x330.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  width: 50%;
-}
-
-
-
-
-
