@@ -357,16 +357,21 @@ h2 {
 
 .table-box {
   width: 100%;
-  max-width: 1400px;
-  min-height: 100vh;
+  max-width: 1200px;
+  min-height: 300vh;
   margin: auto;
 }
 
 .mage1 {
   padding-left: 10px;
+  width: 50%;
+  position: relative;
+  
 }
 .mage2 {
   padding-left: 30px;
+  width: 50%;
+  position: relative;
 }
 .mrgn3 {
   margin-top: 23px;
@@ -399,4 +404,58 @@ h2 {
   .image-style2 {
     padding: 0;
   }
+
+  .row2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mage2, .mage1{
+    padding: 0;
+  }
+
+  .mage2{
+    margin-top: 20px;
+  }
+
+  .mrgn3{
+    margin-top: 20px;
+  }
+}
+
+
+.blocked-img{
+position: relative;
+  width: 100%;
+  height: 335px;
+}
+
+.blocked-img2{
+ position: relative;
+  width: 100%;
+  height: 700px;
+}
+
+.absolute{
+  position: absolute;
+  top: 0;
+  bottom: 70px;
+  left: 63px;
+  right: 0;
+  width:77% ;
+
+}
+
+.border3{
+  border-bottom: 1px solid white;
+  margin: auto;
+  width: 12%;
+  padding-top: 40px;
+}
+
+.prices-description{
+  font-size: 30px;
+  margin-top: 30px;
 }
