@@ -73,10 +73,12 @@
     </div>
     <div class="images-box">
       <div class="row">
-        <div class="image1 pad">
-          <img class="image-style" src="gallery-item-1-570x330.jpeg" alt="" />
-          <div class="column">
-            <div class="image3 pad">
+        <div class="image1">
+          <div class="image-cut margin">
+            <img class="image-style" src="gallery-item-1-570x330.jpeg" alt="" />
+          </div>
+          <div class="column image-cut">
+            <div class="image3">
               <img
                 class="image-style"
                 src="gallery-item-2-570x330.webp"
@@ -86,7 +88,13 @@
           </div>
         </div>
         <div class="image2 pad">
-          <img class="image-style2" src="gallery-item-3-548x690.jpeg" alt="" />
+          <div class="image-cut">
+            <img
+              class="image-style2"
+              src="gallery-item-3-548x690.jpeg"
+              alt=""
+            />
+          </div>
         </div>
       </div>
     </div>
@@ -129,14 +137,17 @@
           </div>
         </div>
         <div class="imagen2">
-          <div class="column positioning">
-            <div class="border"></div>
-            <div class="price">$24</div>
-            <div class="price-info">FRITTO MISTO</div>
-            <p class="prices-desc">
-              Mixed seasonal flash-fried sustainable fish & shellfish served
-              with chunky Italian tartare sauce & lemon.
-            </p>
+          <img class="img-position" src="dish-2-570x690.jpeg" alt="" />
+          <div class="genovese">
+            <div class="column positioning">
+              <div class="border"></div>
+              <div class="price">$24</div>
+              <div class="price-info">FRITTO MISTO</div>
+              <p class="prices-desc">
+                Mixed seasonal flash-fried sustainable fish & shellfish served
+                with chunky Italian tartare sauce & lemon.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -205,32 +216,75 @@
 
     <div class="table-box">
       <div class="row2">
-        <div class="mage1"><img class="blocked-img2" src="bakedcresp.jpg" alt="" />
-        
-        <div class="absolute">
-          <div class="column positioning">
-            <div class="border3"></div>
-            <div class="price">$17</div>
-            <div class="price-info">
-              BAKED <br> CRESPELLE
+        <div class="mage1">
+          <img class="blocked-img2" src="bakedcresp.jpg" alt="" />
+
+          <div class="absolute">
+            <div class="column positioning">
+              <div class="border3"></div>
+              <div class="price">$17</div>
+              <div class="price-info">
+                BAKED <br />
+                CRESPELLE
+              </div>
+              <p class="prices-description">
+                Spinach, Westcombe ricotta &amp; basil baked in gluten-free
+                buckwheat pancakes with smoked mozzarella, sweet buttery leeks,
+                Sicilian tomato sauce &amp; Parmesan.
+              </p>
             </div>
-            <p class="prices-description">
-              Spinach, Westcombe ricotta &amp; basil baked in gluten-free buckwheat pancakes with smoked mozzarella, sweet buttery leeks, Sicilian tomato sauce &amp; Parmesan.
-            </p>
           </div>
         </div>
-        
-        </div>
-        <div class="mage2">  
-          <img class="blocked-img" src="dish-4-570x330.jpg" alt="" />
-          
-          
+        <div class="mage2">
+          <div class="div">
+            <img class="blocked-img" src="dish-4-570x330.jpg" alt="" />
+            <div class="genovese">
+              <div class="column positioning">
+                <div class="price2">$6</div>
+                <div class="price-info2">
+                  GNOCCHI <br />
+                  GENOVESE
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div class="mage3 mrgn3">
-            <img class="blocked-img" src="dish-5-570x330.webp" alt="" />
-            
+            <div class="div">
+              <img class="blocked-img" src="dish-5-570x330.webp" alt="" />
+              <div class="genovese">
+                <div class="column positioning">
+                  <div class="price2">$3</div>
+                  <div class="price-info2">
+                    ORANGE BLOSSOM <br />
+                    POLENTA CAKE
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        </div>
+      </div>
+    </div>
+
+    <div class="welcome-box2 reservation">
+      <div class="bro4"></div>
+      <h3 class="align">Reservation</h3>
+      <div>
+        <form action="">
+          <label for="form">Your name</label>
+          <input class="form-control" type="text" />
+  
+          <label for="">Phone</label>
+          <input
+            class="form-control"
+            type="text"
+            name="Apellidos"
+            id="Apellidos"
+          />
+
+          <input type="submit" value="Enviar" />
+      </div>
     </div>
   </body>
 </html>
