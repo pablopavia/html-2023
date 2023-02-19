@@ -34,6 +34,9 @@ h2 {
 
 .arrow {
   width: 150px;
+  display: flex;
+  align-items: center;
+justify-content: center;
 }
 .imagen {
   z-index: 1;
@@ -43,20 +46,27 @@ h2 {
   justify-content: space-between;
   width: 100%;
 }
-.arrows-position {
-  width: 100%;
-  height: 60px;
-  padding-bottom: 4%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  z-index: 4;
+
+.arrow-size2{
+  height: 71px;
+  width: 71px;
+  transition: all .2s;
+  transform-origin: 0%; 
 }
 
-.arrows {
-  height: 40px;
-  width: 10%;
-  color: white;
+.arrow-size2:hover{
+  height: 56px;
+}
+
+.arrow-size{
+  width: 50px;
+  height: 50px; 
+  transition: all .2s;
+  transform-origin: 0%; 
+}
+
+.arrow-size:hover{
+  height: 40px ;
 }
 
 .imageinfo-box {
@@ -102,7 +112,7 @@ h2 {
 .menu-button {
   background-color: transparent;
   height: 58px;
-  width: 15%;
+  width: 25%;
 
   border: 1px solid white;
   padding: 5px 20px;
@@ -114,7 +124,7 @@ h2 {
 }
 
 .menu-button:hover {
-  width: 18%;
+  width: 30%;
   transform-origin: 100%;
 }
 
@@ -180,6 +190,7 @@ h2 {
   width: 100%;
   height: 100%;
   transition: all ease-in-out 0.5s;
+  z-index: 1;
 }
 
 .image-style:hover {
@@ -192,6 +203,7 @@ h2 {
   justify-content: center;
   overflow: hidden;
   background-color: black;
+ 
 }
 
 .margin {
@@ -272,9 +284,7 @@ h2 {
   min-height: 719px;
 }
 
-.imagen1:hover {
-  transform: scale(110%);
-}
+
 
 .imagen2 {
   width: 49%;
@@ -282,6 +292,7 @@ h2 {
   position: relative;
   overflow: hidden;
 }
+
 
 .img-position {
   width: 100%;
@@ -527,6 +538,7 @@ h2 {
   left: 0;
   right: 0;
   overflow: hidden;
+  z-index: 100;
 }
 .price2 {
   font-size: 60px;
@@ -568,6 +580,7 @@ form {
 }
 
 label {
+  position: relative;
 }
 
 input {
@@ -626,6 +639,7 @@ input.form-control {
   width: 30.333%;
 }
 
+
 .row4 {
   display: flex;
   flex-direction: row;
@@ -667,6 +681,7 @@ iframe {
   max-height: 800px;
 }
 
+
 .last-box {
   display: flex;
   flex-direction: column;
@@ -689,6 +704,7 @@ iframe {
   width: 100%;
   height: 40px;
   margin-top: 50px;
+  margin-bottom: 70px;
 }
 
 .contact-position {
@@ -732,3 +748,12 @@ iframe {
   height: 100%;
   padding-top: 20px;
 }
+
+.year{
+  font-size: 24px;
+  font-style: italic;
+  color: #90909b;
+  padding-bottom: 70px;
+}
+
+
