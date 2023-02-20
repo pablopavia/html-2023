@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+/* 
+
+  Prueba
+
+  Proyecto Final
+
+
+      Javascript/ Jquery 
+
+      - HTML --> Lenguaje de maquetacion
+      - CSS --> Lenguaje de estilo
+      - JS --> lenguaje de programación -> Algoritmo
+
+      
+*/
+
+.color-red {
+  color: red;
+}
