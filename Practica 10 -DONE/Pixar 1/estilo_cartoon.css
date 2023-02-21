@@ -42,11 +42,19 @@ nav {
 }
 
 .menu-desplegable {
-  width: 90%;
+  width: 100%;
   position: fixed;
+  
+  z-index: 3000;
+  height: 100vh;
+}
+
+.one{
+  width: 95%;
   background-color: white;
   z-index: 3000;
   height: 100vh;
+  
 }
 .menu-state {
   display: none;
@@ -81,8 +89,8 @@ nav {
 
 .hover-box1 {
   position: absolute;
-  width: 13%;
-  height: 17%;
+  width: 200px;
+  height: 300px;
   background-color: #1d1d1d;
   z-index: 100;
   padding: 15px;
@@ -339,6 +347,10 @@ h3 {
 
   .boton-style {
     display: none;
+  }
+  .menu-button{
+    height: 22px;
+    width: 22px;
   }
 
   .gg-menu {
