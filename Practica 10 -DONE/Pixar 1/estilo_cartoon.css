@@ -41,12 +41,27 @@ nav {
   height: 100%;
 }
 
+.menu-desplegable {
+  width: 90%;
+  position: fixed;
+  background-color: white;
+  z-index: 3000;
+  height: 100vh;
+}
+.menu-state {
+  display: none;
+}
+.activo {
+  display: block;
+}
+
 .botones {
   width: 70%;
   height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  cursor: pointer;
 }
 
 .boton-style {

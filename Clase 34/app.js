@@ -86,4 +86,46 @@ $('#btn1').click(function () {
   $('h1').addClass('color-red');
 });
 
-// Añadir / quitar clases
+// Cuando clico en el boton quiero añadir una animacion
+//  Cuándo -> Evento de click -> EVENTO
+//  Dónde -> En el boton -> EL ELEMENTO QUE DESENCADENA EL EVENTO
+
+// Que -> Añadir una animacion al cuadrado
+
+$('#btnStart').click(function () {
+  console.log('boton start clicked');
+  cuadrado_rotando = true;
+  $('.cuadrado').addClass('rotar');
+});
+
+$('#btnStop').click(function () {
+  console.log('boton stop clicked');
+
+  // Quitar la clase de cuadrado
+
+  $('.cuadrado').removeClass('rotar');
+});
+
+/*
+
+Añadir la clase rotar cuando este parado
+Quitar la clase rotar cuande este en movimiento
+
+*/
+
+// Va a determinar cuando el cuadrado esta rotando
+let cuadrado_rotando = false;
+
+$('#btnStartStop').click(function () {
+  console.log('Click en Empezar / Parar');
+
+  console.log(' Cuadrado rotando', cuadrado_rotando);
+
+  if (cuadrado_rotando === false) {
+    $('.cuadrado').addClass('rotar');
+    cuadrado_rotando = true;
+  } else {
+    $('.cuadrado').removeClass('rotar');
+    cuadrado_rotando = false;
+  }
+});
