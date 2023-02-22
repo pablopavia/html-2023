@@ -26,6 +26,9 @@ nav {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  z-index: 1000;
+  position: fixed;
+  background-color: white;
 }
 
 .logo {
@@ -37,25 +40,69 @@ nav {
 }
 
 .pixar > img {
-  width: 100%;
+  width: 100px;
   height: 100%;
+}
+.one-text {
+  font-family: brandon-grotesque;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  letter-spacing: 3px;
+  line-height: 1.2em;
+  text-transform: none;
+  color: #000;
+  margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .menu-desplegable {
   width: 100%;
   position: fixed;
-  
+
   z-index: 3000;
   height: 100vh;
+}
+.jk {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 10px;
+  padding-bottom: 1px;
 }
 
-.one{
-  width: 95%;
-  background-color: white;
-  z-index: 3000;
+.menu-flex {
+  width: 100%;
+  background-color: transparent;
+  z-index: 3001;
   height: 100vh;
-  
+  display: flex;
+  flex-direction: row;
 }
+.one {
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+}
+
+.x-button {
+  height: 8%;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.one-box {
+  height: 100%;
+  width: 100%;
+  padding: 45px;
+}
+
+.two {
+  width: 80px;
+  height: 100vh;
+  background-color: transparent;
+}
+
 .menu-state {
   display: none;
 }
@@ -152,7 +199,7 @@ nav {
 }
 
 .big-box {
-  height: 600vh;
+  min-height: 600vh;
   width: 100%;
   padding: 150px 142px;
 }
@@ -348,7 +395,7 @@ h3 {
   .boton-style {
     display: none;
   }
-  .menu-button{
+  .menu-button {
     height: 22px;
     width: 22px;
   }
@@ -364,11 +411,21 @@ h3 {
     justify-content: center;
     align-items: center;
   }
+
+  .big-box {
+    padding: 100px 60px;
+  }
+  .pixar2 {
+    background-position: center;
+  }
 }
 
 @media (max-width: 770px) {
   .movie {
     width: 100%;
+  }
+  nav {
+    padding-left: 50px;
   }
   .big-box {
     padding: 100px 92px;
@@ -377,5 +434,9 @@ h3 {
   .desc-image {
     width: 80%;
     text-align: center;
+  }
+  .logo_title {
+    white-space: nowrap;
+    font-size: 40px;
   }
 }

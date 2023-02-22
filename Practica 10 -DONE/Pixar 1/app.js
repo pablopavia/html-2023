@@ -16,3 +16,8 @@ $('.menu-button').click(function () {
   console.log('clickado el menu');
   $('.menu-desplegable').addClass('activo');
 });
+
+$('.two').click(function () {
+  console.log('Clickado en cerrar menu');
+  $('.menu-desplegable').removeClass('activo');
+});
