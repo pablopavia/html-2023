@@ -4,6 +4,7 @@
 
 body{
     margin: 0;
+    background-color: rgb(0, 0, 0);
 }
 
 h1, h2{
@@ -24,18 +25,23 @@ Aqui va el media de la web
 
 .first-row{
     width: 100%;
-    height: 100px;
-    background-color: rgb(34, 34, 34);
+    height: 13vh;
+   
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    margin-top: 20px;
    
+}
+
+.menu-button{
+    width: 50px;
 }
 
 .contact-box{
     width: 100px;
-    border: 3px solid turquoise;
+    border: 3px solid #14bfb5;
     height: 100%;
     margin-left: 20px;
     display: flex;
@@ -43,4 +49,16 @@ Aqui va el media de la web
     align-items: center;
     color: white;
 
+}
+
+.logo{
+    color: white;
+}
+
+.first-web{
+    height:84vh ;
+    width: 100%;
+    background-color: black;
+    
+    --theme-color: #14bfb5;
 }
