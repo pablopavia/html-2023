@@ -3,9 +3,11 @@
 }
 
 body {
-  background-color:     rgb(0, 0, 0);
+  background-color:     rgb(28, 0, 41);
   color: white;
   margin: 0;
+  font-family: 'Raleway', sans-serif;
+  min-height:150vh ;
  
 }
 
@@ -30,10 +32,6 @@ background-color: rgb(32, 31, 31);
 08 Product Design
 */
 
-/*
-
-Aqui va el media de la web
-*/
 
 .topm {
   margin-top: 40px;
@@ -69,7 +67,6 @@ Aqui va el media de la web
 
 .first-row {
   height: 100px;
-
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -90,6 +87,12 @@ Aqui va el media de la web
   color: white;
   cursor: pointer;
   border-radius: 10%;
+}
+.contact-box:hover{
+  box-shadow: 0px 1px 2px rgb(162, 0, 255), 
+  0px 2px 8px rgb(162, 0, 255),
+  0px 4px 15px rgb(162, 0, 255),
+  0px 8px 20px rgb(162, 0, 255);
 }
 
 .first-web {
@@ -121,17 +124,33 @@ Aqui va el media de la web
   border-radius: 10%;
   cursor: pointer;
 }
+
+.menu-circle:hover  {
+  box-shadow: 0px 1px 2px rgb(162, 0, 255), 
+  0px 2px 8px rgb(162, 0, 255),
+  0px 4px 15px rgb(162, 0, 255),
+  0px 8px 20px rgb(162, 0, 255);
+}
 .lilhover {
   transition: all 0.7s;
   transform-origin: center;
 }
 .lilhover:hover {
-  background-color: #12b1a6;
+  background-color:rgb(17, 3, 49);
   transform: scale(115%);
 }
 
 .lilhover2:hover {
-  background-color: #12b1a6;
+background-color:rgb(17, 3, 50);
+transform-origin: 100%;
+transition: all .3s ;
+box-shadow: 0px 1px 2px rgb(162, 0, 255), 
+0px 0px 3px rgb(162, 0, 255),
+0px 2px 10px rgb(227, 194, 246), 
+0px 6px 15px rgb(162, 0, 255),
+0px -7px 15px rgb(162, 0, 255);
+color:white;
+
 }
 
 /* Esto es el width del menu */
@@ -152,11 +171,10 @@ Aqui va el media de la web
   width: 50%;
   height: 100%;
   box-shadow: 0px 1px 2px rgb(162, 0, 255), 
-  0px 2px 8px rgb(162, 0, 255), 
-  0px 4px 15px rgb(162, 0, 255), 
+  0px 2px 8px rgb(162, 0, 255),
+  0px 4px 15px rgb(162, 0, 255),
   0px 8px 20px rgb(162, 0, 255);
-  
-  font-size: 40px;
+  font-size: 30px;
   padding-top: 70px;
   line-height: 70px;
   border: #fff 3px solid;
@@ -170,21 +188,12 @@ Aqui va el media de la web
   padding-bottom: 20px;
 }
 
-.welcome-box:hover{
- 
 
-}
 .neon-text{
-  color: #fff;
-  text-shadow:
-    0 0 7px #fff,
-    0 0 10px #fff,
-    0 0 21px #fff,
-    0 0 42px rgb(162, 0, 255),
-    0 0 82px rgb(12, 2, 36),
-    0 0 92px rgb(12, 2, 36),
-    0 0 102px rgb(12, 2, 36),
-    0 0 151px rgb(12, 2, 36);
+  font-family: 'Futura', sans-serif;
+  font-size: 48px;
+  color: #ffffff;
+  text-shadow: 0 0 5px #620279, 0 0 5px #b800e6, 0 0 15px #b800e6, 0 0 25px #b800e6, 0 0 35px #b800e6, 0 0 12px #b800e6, 0 0 13px #b800e6;
 }
 
 
@@ -214,28 +223,82 @@ Aqui va el media de la web
   border-radius: 13px;
   cursor: pointer;
   text-align: center;
-
+transition: all 0.5;
+transform-origin: 0%;
   font-size: 20px;
 }
 
-.image {
-  height: 400px;
-  max-width: 100%;
-  margin-top: 140px;
-  margin-right: 50px;
-  padding-top: 40px;
+.neon-box2{
+  margin-top: 60px;
+
+  
+}
+h4{
+  font-size: 23px ;
 }
 
-.img-position {
+.modules{
+  font: size 50px;;
+}
+
+
+.row {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 15px;
+  flex-wrap: wrap;
 }
 
-.bottom-border {
-  background-color: #2e2e2e;
-  width: 100%;
-  height: 265px;
+.column {
+  width: 23%;
+  border: rgb(12, 2, 36) 3px solid;
+  border-radius: 15px;
+  background-color: rgb(12, 2, 36);
+  cursor:pointer
 }
+
+.column:hover{
+  box-shadow: 0px 1px 2px rgb(162, 0, 255), 
+  0px 2px 8px rgb(162, 0, 255),
+  0px 4px 15px rgb(162, 0, 255),
+  0px 8px 20px rgb(162, 0, 255);
+  border: #fff 3px solid;
+ 
+}
+
+.flex-row{
+  display: flex;
+  flex-direction: row; 
+  justify-content: center;
+  align-items: center;
+}
+.mrgn{
+  margin-left: 5px;
+}
+.info-modules{
+  padding: 5px;
+}
+
+.icon-box{
+  width: 70%;
+  height: 60px;
+  margin-right: 15px;
+  margin-bottom: 5px;
+}
+
+.image{
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+
+
+
 
 @media (max-width: 1300px) {
   .menu-button {
@@ -261,26 +324,25 @@ Aqui va el media de la web
   }
   .download-cv {
     width: 140px;
-    border: #14bfb5 3px solid;
+   
     border-radius: 8px;
     font-size: 20px;
     padding: 0px 3px;
+  }
+  .welcome-box{
+    width: 70%;
   }
 
   .button-box {
     justify-content: space-around;
     width: 500px;
   }
-  .image {
-    padding-top: 63px;
-  }
+ 
   .topm {
     margin-left: 40px;
     margin-right: 40px;
   }
 }
 @media (max-width: 750px) {
-  .image {
-    padding-top: 20%;
-  }
+
 }
