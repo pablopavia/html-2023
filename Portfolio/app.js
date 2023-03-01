@@ -5,3 +5,10 @@ $('.menu-circle').click(function () {
   $('menu-desplegable').addClass('animation-menu');
 });
 
+// Hide the loader and show the main content when the page is fully loaded
+window.addEventListener('load', function () {
+  var loader = document.getElementById('loader');
+  var main = document.getElementById('main');
+  loader.style.display = 'none';
+  main.style.display = 'block';
+});
