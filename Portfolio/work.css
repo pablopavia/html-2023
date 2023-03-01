@@ -152,28 +152,56 @@ h4 {
 
 .bar {
   font-size: 40px;
-  text-shadow: 0 0 0px #abc65f, 0 0 0px #ddfa00, 0 0 10px #ddfa00,
-    0 0 20px #abc65f, 0 0 30px #abc65f, 0 0 10px #abc65f, 0 0 8px #ddfa00;
+  text-shadow: 0 0 0px #620279, 0 0 0px #b800e6, 0 0 10px #2de0f0,
+  0 0 20px #2de0f0, 0 0 30px #2de0f0, 0 0 10px #2de0f0, 0 0 8px #2de0f0;
 }
 .menu-titles {
-  font-size: 30px;
+  font-size: 35px;
   margin: 90px;
   color: #ffffff;
   text-shadow: 0 0 0px #ffffff, 0 0 0px #b800e6, 0 0 5px #b800e6,
     0 0 10px #ffffff, 0 0 15px #ffffff, 0 0 5px #ffffff, 0 0 4px #ffffff;
   cursor: pointer;
+  font-family: 'Bebas Neue';
+  letter-spacing: 5px;
+}
+
+.menu-titles:hover{
+  text-shadow: 0 0 0px #FFD700, 0 0 0px #b800e6, 0 0 5px #b800e6,
+  0 0 10px #FFD700, 0 0 15px #FFD700, 0 0 5px #FFD700, 0 0 4px #FFD700;
 }
 a {
   text-decoration: none;
   color: white;
 }
-.menu-titles2 {
+
+.menu-titles3{
+  letter-spacing: 5px;
+  font-family: 'Bebas Neue';
+  font: bold;
   cursor: pointer;
-  font-size: 30px;
+  font-size: 35px;
   margin: 70px;
   color: #ffffff;
-  text-shadow: 0 0 0px #ddfa00, 0 0 0px #ddfa00, 0 0 10px #ddfa00,
-    0 0 20px #ddfa00, 0 0 30px #ddfa00, 0 0 10px #ddfa00, 0 0 8px #ddfa00;
+  text-shadow: 0 0 0px #ffffff, 0 0 0px #b800e6, 0 0 5px #b800e6,
+    0 0 10px #ffffff, 0 0 15px #ffffff, 0 0 5px #ffffff, 0 0 4px #ffffff;
+}
+
+.menu-titles3:hover{
+  text-shadow: 0 0 0px #620279, 0 0 0px #b800e6, 0 0 10px #b800e6,
+    0 0 20px #b800e6, 0 0 30px #b800e6, 0 0 10px #b800e6, 0 0 8px #b800e6;
+}
+
+.menu-titles2 {
+  letter-spacing: 5px;
+  font-family: 'Bebas Neue';
+  font: bold;
+  cursor: pointer;
+  font-size: 35px;
+  margin: 70px;
+  color: #ffffff;
+  text-shadow: 0 0 0px #620279, 0 0 0px #b800e6, 0 0 10px #2de0f0,
+  0 0 20px #2de0f0, 0 0 30px #2de0f0, 0 0 10px #2de0f0, 0 0 8px #2de0f0;
 }
 
 .pad {
@@ -255,7 +283,8 @@ a {
   }
 
   .menu-titles,
-  .menu-titles2 {
+  .menu-titles2,
+  .menu-titles3 {
     display: none;
   }
   .bar {
