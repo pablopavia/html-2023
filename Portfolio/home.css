@@ -13,7 +13,7 @@ body {
   color: white;
   margin: 0;
   font-family: 'Raleway', sans-serif;
-  min-height: 150vh;
+  min-height: 100vh;
 }
 
 h1,
@@ -181,24 +181,22 @@ background-color: rgb(32, 31, 31);
   text-align: center;
 }
 
-.icon-text{
- 
+.icon-text {
   color: #ffffff;
   text-shadow: 0 0 0px #620279, 0 0 0px #b800e6, 0 0 10px #b800e6,
     0 0 20px #b800e6, 0 0 30px #b800e6, 0 0 10px #b800e6, 0 0 8px #b800e6;
   text-align: center;
 }
 
-.icon-text:hover{
+.icon-text:hover {
   text-shadow: 0 0 0px #620279, 0 0 0px #b800e6, 0 0 10px #2de0f0,
-  0 0 20px #2de0f0, 0 0 30px #2de0f0, 0 0 10px #2de0f0, 0 0 8px #2de0f0;
+    0 0 20px #2de0f0, 0 0 30px #2de0f0, 0 0 10px #2de0f0, 0 0 8px #2de0f0;
 }
 
-.neon-text2{
+.neon-text2 {
   text-shadow: 0 0 0px #620279, 0 0 0px #b800e6, 0 0 10px #2de0f0,
-  0 0 20px #2de0f0, 0 0 30px #2de0f0, 0 0 10px #2de0f0, 0 0 8px #2de0f0;
+    0 0 20px #2de0f0, 0 0 30px #2de0f0, 0 0 10px #2de0f0, 0 0 8px #2de0f0;
 }
-
 
 .button-box {
   display: flex;
@@ -333,7 +331,7 @@ h4 {
   letter-spacing: 5px;
 }
 
-.menu-titles3{
+.menu-titles3 {
   font-size: 35px;
   margin: 90px;
   color: #ffffff;
@@ -344,13 +342,13 @@ h4 {
   letter-spacing: 5px;
 }
 
-.menu-titles3:hover{
+.menu-titles3:hover {
   text-shadow: 0 0 0px #620279, 0 0 0px #b800e6, 0 0 10px #2de0f0,
-  0 0 20px #2de0f0, 0 0 30px #2de0f0, 0 0 10px #2de0f0, 0 0 8px #2de0f0;
+    0 0 20px #2de0f0, 0 0 30px #2de0f0, 0 0 10px #2de0f0, 0 0 8px #2de0f0;
 }
-.menu-titles:hover{
-  text-shadow: 0 0 0px #FFD700, 0 0 0px #b800e6, 0 0 5px #b800e6,
-    0 0 10px #FFD700, 0 0 15px #FFD700, 0 0 5px #FFD700, 0 0 4px #FFD700;
+.menu-titles:hover {
+  text-shadow: 0 0 0px #ffd700, 0 0 0px #b800e6, 0 0 5px #b800e6,
+    0 0 10px #ffd700, 0 0 15px #ffd700, 0 0 5px #ffd700, 0 0 4px #ffd700;
 }
 a {
   text-decoration: none;
@@ -363,8 +361,8 @@ a {
   color: #ffffff;
   text-shadow: 0 0 0px #620279, 0 0 0px #b800e6, 0 0 10px #b800e6,
     0 0 20px #b800e6, 0 0 30px #b800e6, 0 0 10px #b800e6, 0 0 8px #b800e6;
-    font-family: 'Bebas Neue';
-    letter-spacing: 5px;
+  font-family: 'Bebas Neue';
+  letter-spacing: 5px;
 }
 .mrgn {
   margin-top: 8px;
@@ -372,15 +370,11 @@ a {
 .info-modules {
   text-align: center;
   padding: 5px;
-  
 }
 .pad {
   padding: 4px;
 }
 
-.ww {
-  width: 25% !important;
-}
 .icon-box {
   width: 30%;
   height: 65px;
@@ -407,25 +401,21 @@ a {
   margin-right: 6px;
 }
 
-.last-last-box{
- width: 100%;
-display: flex;
+.last-last-box {
+  width: 100%;
+  display: flex;
   justify-content: center;
 
-  height: 24vh;
-  
+  min-height: 15vh;
 }
-.last-box{
+.last-box {
   width: 100%;
   background-color: #000000;
   margin-top: 20px;
-
 }
 
-
 .inside-box {
-
-  padding-top: 40px ;
+  padding-top: 40px;
 }
 .row-last {
   display: flex;
@@ -500,9 +490,9 @@ display: flex;
     width: 100%;
   }
   .contact-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .first-row {
     justify-content: space-around;

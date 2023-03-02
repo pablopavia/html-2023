@@ -1,0 +1,209 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #4b0082;
+  color: rgb(255, 255, 255);
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  min-height: 150vh;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+/*
+ 
+--theme-color: #14bfb5;
+background-color: rgb(32, 31, 31);
+01 Adobe Design Tools
+02 HTML5 Y CSS3
+03 Experiencia Usuario (UX)
+04 Interfaces Gráficas (UI)
+05 After Effects
+06 Cinema 4D
+07 Dirección de Arte
+08 Product Design
+*/
+
+.topm {
+  margin-top: 40px;
+}
+.logo-box {
+  margin-top: 15px;
+  margin-left: 50px;
+}
+.menu-desplegable {
+  width: 55%;
+  height: 100vh;
+  background-color: #4f0044;
+  position: fixed;
+  left: 23%;
+  z-index: 10;
+  top: 0;
+}
+
+.blocked {
+  display: none;
+}
+.activo {
+  display: block;
+}
+.margin-box {
+  margin: auto;
+  max-width: 1200px;
+  width: 100%;
+}
+.logo {
+  padding-left: 20px;
+}
+
+.first-row {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-button {
+  width: 50px;
+}
+
+.contact-box {
+  width: 120px;
+  border: 3px solid #ffffff;
+  height: 100%;
+
+  color: white;
+  cursor: pointer;
+  border-radius: 10%;
+  display: none;
+}
+.contact-box:hover {
+  box-shadow: 0px 1px 2px rgb(162, 0, 255), 0px 2px 8px rgb(162, 0, 255),
+    0px 4px 15px rgb(162, 0, 255), 0px 8px 20px rgb(162, 0, 255);
+}
+
+.first-web {
+  width: 100%;
+  min-height: 25vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.center-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-button {
+  width: 120px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  display: none;
+}
+
+.menu-circle {
+  width: 110px;
+  height: 100px;
+  border: 3px #ffffff solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10%;
+  cursor: pointer;
+}
+
+.menu-circle:hover {
+  box-shadow: 0px 1px 2px rgb(162, 0, 255), 0px 2px 8px rgb(162, 0, 255),
+    0px 4px 15px rgb(162, 0, 255), 0px 8px 20px rgb(162, 0, 255);
+}
+
+.neon-text {
+  font-size: 40px;
+  color: #ffffff;
+  text-shadow: 0 0 0px #620279, 0 0 0px #b800e6, 0 0 10px #b800e6,
+    0 0 20px #b800e6, 0 0 30px #b800e6, 0 0 10px #b800e6, 0 0 8px #b800e6;
+  text-align: center;
+}
+
+.menu-burger {
+  width: 35px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+}
+
+h4 {
+  font-size: 23px;
+}
+
+.bar {
+  font-size: 40px;
+  text-shadow: 0 0 0px #620279, 0 0 0px #b800e6, 0 0 10px #2de0f0,
+    0 0 20px #2de0f0, 0 0 30px #2de0f0, 0 0 10px #2de0f0, 0 0 8px #2de0f0;
+}
+.menu-titles {
+  font-size: 35px;
+  margin: 90px;
+  color: #ffffff;
+  text-shadow: 0 0 0px #ffffff, 0 0 0px #b800e6, 0 0 5px #b800e6,
+    0 0 10px #ffffff, 0 0 15px #ffffff, 0 0 5px #ffffff, 0 0 4px #ffffff;
+  cursor: pointer;
+  font-family: 'Bebas Neue';
+  letter-spacing: 5px;
+}
+
+.menu-titles:hover {
+  text-shadow: 0 0 0px #ffd700, 0 0 0px #b800e6, 0 0 5px #b800e6,
+    0 0 10px #ffd700, 0 0 15px #ffd700, 0 0 5px #ffd700, 0 0 4px #ffd700;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.menu-titles3 {
+  letter-spacing: 5px;
+  font-family: 'Bebas Neue';
+  font: bold;
+  cursor: pointer;
+  font-size: 35px;
+  margin: 70px;
+  color: #ffffff;
+  text-shadow: 0 0 0px #ffffff, 0 0 0px #b800e6, 0 0 5px #b800e6,
+    0 0 10px #ffffff, 0 0 15px #ffffff, 0 0 5px #ffffff, 0 0 4px #ffffff;
+}
+
+.menu-titles3:hover {
+  text-shadow: 0 0 0px #620279, 0 0 0px #b800e6, 0 0 10px #b800e6,
+    0 0 20px #b800e6, 0 0 30px #b800e6, 0 0 10px #b800e6, 0 0 8px #b800e6;
+}
+
+.menu-titles2 {
+  letter-spacing: 5px;
+  font-family: 'Bebas Neue';
+  font: bold;
+  cursor: pointer;
+  font-size: 35px;
+  margin: 70px;
+  color: #ffffff;
+  text-shadow: 0 0 0px #620279, 0 0 0px #b800e6, 0 0 10px #2de0f0,
+    0 0 20px #2de0f0, 0 0 30px #2de0f0, 0 0 10px #2de0f0, 0 0 8px #2de0f0;
+}
+
+.pad {
+  padding: 4px;
+}
