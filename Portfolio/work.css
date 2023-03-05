@@ -265,6 +265,14 @@ a {
   position: relative;
 }
 
+.grey{
+  filter: grayscale(100%);
+}
+
+.grey:hover{
+  filter: grayscale(0%);
+}
+
 /* AQUI ES EL JS DE CUANDO CLICK EN IMAGEN */
 .imagen-desplegable1 {
   width: 60%;
