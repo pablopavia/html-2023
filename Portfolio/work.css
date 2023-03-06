@@ -114,7 +114,7 @@ background-color: rgb(32, 31, 31);
 
 .menu-button {
   width: 120px;
-  height: 100px;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -124,7 +124,7 @@ background-color: rgb(32, 31, 31);
 
 .menu-circle {
   width: 110px;
-  height: 100px;
+  height: 100%;
   border: 3px #ffffff solid;
   display: flex;
   justify-content: center;
@@ -244,9 +244,10 @@ a {
   text-shadow: 0 0 0px #620279, 0 0 0px #b800e6, 0 0 10px #2de0f0,
     0 0 20px #2de0f0, 0 0 30px #2de0f0, 0 0 10px #2de0f0, 0 0 8px #2de0f0;
   letter-spacing: 3px;
+  white-space: nowrap;
 }
 .work-box {
-  min-height: 500px;
+  height: 350px;
   width: 50%;
   position: relative;
   border-radius: 15px;
@@ -256,7 +257,9 @@ a {
 .image,
 .image2,
 .image3,
-.image4 {
+.image4,
+.image5,
+.image6 {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -265,11 +268,12 @@ a {
   position: relative;
 }
 
-.grey{
+.grey {
   filter: grayscale(100%);
+  transition: all 0.2s;
 }
 
-.grey:hover{
+.grey:hover {
   filter: grayscale(0%);
 }
 
@@ -287,7 +291,73 @@ a {
   border-radius: 20px;
   animation-name: scale;
   animation-iteration-count: 1;
-  animation-duration: 1s;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+}
+
+.imagen-desplegable2 {
+  width: 60%;
+  height: 750px;
+  position: fixed;
+  top: 200px;
+  left: 750px;
+  right: 0;
+  background-color: #ffffff;
+  z-index: 100;
+  animation-fill-mode: forwards;
+  border-radius: 20px;
+  animation-name: scale2;
+  animation-iteration-count: 1;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+}
+.imagen-desplegable3 {
+  width: 60%;
+  height: 750px;
+  position: fixed;
+  top: 100px;
+  left: 250px;
+  right: 0;
+  background-color: #ffffff;
+  z-index: 100;
+  animation-fill-mode: forwards;
+  border-radius: 20px;
+  animation-name: scale;
+  animation-iteration-count: 1;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+}
+
+.imagen-desplegable4 {
+  width: 60%;
+  height: 750px;
+  position: fixed;
+  top: 200px;
+  left: 750px;
+  right: 0;
+  background-color: #ffffff;
+  z-index: 100;
+  animation-fill-mode: forwards;
+  border-radius: 20px;
+  animation-name: scale2;
+  animation-iteration-count: 1;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+}
+.imagen-desplegable5 {
+  width: 60%;
+  height: 750px;
+  position: fixed;
+  top: 200px;
+  left: 250px;
+  right: 0;
+  background-color: #ffffff;
+  z-index: 100;
+  animation-fill-mode: forwards;
+  border-radius: 20px;
+  animation-name: scale;
+  animation-iteration-count: 1;
+  animation-duration: 0.8s;
   animation-fill-mode: forwards;
 }
 .transparent-box {
@@ -298,6 +368,20 @@ a {
   top: 0;
 
   background-color: rgba(0, 0, 0, 0.211);
+}
+@keyframes scale2 {
+  0% {
+    transform: scale(0%);
+  }
+
+  50% {
+    translate: -200px;
+  }
+
+  100% {
+    transform: scale(100%);
+    translate: -200px;
+  }
 }
 
 @keyframes scale {
@@ -319,8 +403,10 @@ a {
 .image1:hover,
 .image2:hover,
 .image3:hover,
-.image4:hover {
-  border: #ffffff 3px solid;
+.image4:hover,
+.image5:hover,
+.image6:hover {
+  border: #ffffff 4px solid;
 }
 
 .cross-flex {
@@ -332,9 +418,26 @@ a {
   margin-top: 20px;
 }
 .imagen-rayo {
-  width: 63%;
+  width: calc(600px + 50%);
   height: 100%;
 }
+.imagen-tron {
+  width: 77%;
+  height: 100%;
+}
+.imagen-polares {
+  width: 58%;
+  height: 100%;
+}
+.imagen-disp {
+  width: 60%;
+  height: 100%;
+}
+.imagen-moloko {
+  width: 60%;
+  height: 100%;
+}
+
 .flex-box {
   height: 690px;
   display: flex;
@@ -346,9 +449,39 @@ a {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.left {
   object-position: left;
 }
+
+.top {
+  object-position: top;
+}
+
+.center {
+  object-position: right;
+}
 .desc-rayo {
+  margin-left: 40px;
+  text-align: center;
+  width: 37%;
+}
+.desc-tron {
+  margin-left: 40px;
+  text-align: center;
+  width: 37%;
+}
+.desc-polares {
+  margin-left: 40px;
+  text-align: center;
+  width: 37%;
+}
+.desc-moloko {
+  margin-left: 40px;
+  text-align: center;
+  width: 37%;
+}
+.desc-disp {
   margin-left: 40px;
   text-align: center;
   width: 37%;
@@ -357,9 +490,10 @@ a {
 .desc-title {
   color: black;
   text-align: center;
-
+  font-weight: 500;
   font-size: 25px;
   letter-spacing: 2px;
+  margin-top: 20px;
 }
 
 .cross {
@@ -375,14 +509,17 @@ a {
 @media (max-width: 1300px) {
   .menu-button {
     width: 100px;
-    height: 90px;
   }
   .first-web {
     max-width: 1200px;
     width: 100%;
   }
- 
-  .imagen-desplegable1 {
+
+  .imagen-desplegable1,
+  .imagen-desplegable2,
+  .imagen-desplegable3,
+  .imagen-desplegable4,
+  .imagen-desplegable5 {
     right: 307px !important;
     left: 0;
     width: 100%;
@@ -400,8 +537,54 @@ a {
       transform: scale(100%);
     }
   }
-  .imagen-rayo {
+  .imagen-rayo,
+  .imagen-tron,
+  .imagen-polares,
+  .imagen-disp,
+  .imagen-moloko {
     width: 80%;
+  }
+  @keyframes scale2 {
+    0% {
+      transform: scale(0%);
+    }
+
+    50% {
+    }
+
+    100% {
+      transform: scale(100%);
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .imagen {
+    display: none;
+  }
+  .imagen-rayo,
+  .imagen-tron,
+  .imagen-polares,
+  .imagen-disp,
+  .imagen-moloko {
+    display: none;
+  }
+  .desc-rayo,
+  .desc-tron,
+  .desc-polares,
+  .desc-disp,
+  .desc-moloko {
+    width: 100%;
+  }
+  .row {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+  }
+  .work-box {
+    height: 100%;
+    width: 100%;
   }
 }
 
@@ -419,16 +602,6 @@ a {
     }
   }
 
-  .row {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 15px;
-  }
-  .work-box {
-    height: 300px;
-    width: 100%;
-  }
   h2 {
     font-size: 42px;
   }
@@ -493,14 +666,11 @@ a {
     height: auto;
   }
   .icon-box2 {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     gap: 5px;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .info-modules {
-    font-size: 14px;
-  }
 }
