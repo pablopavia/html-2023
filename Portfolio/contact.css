@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color: #905716;
+  background-color: tan;
   color: rgb(255, 255, 255);
   margin: 0;
   font-family: 'Raleway', sans-serif;
@@ -134,7 +134,7 @@ background-color: rgb(32, 31, 31);
 .neon-text {
   font-size: 40px;
   color: #ffffff;
-  text-shadow: 0 0 0px #620279, 0 0 0px #b800e6, 0 0 10px #b800e6,
+  text-shadow: 0 0 0px #ffffff, 0 0 0px #b800e6, 0 0 10px #b800e6,
     0 0 20px #b800e6, 0 0 30px #b800e6, 0 0 10px #b800e6, 0 0 8px #b800e6;
   text-align: center;
 }
@@ -152,20 +152,20 @@ h4 {
 
 .bar {
   font-size: 40px;
-  text-shadow: 0 0 0px #620279, 0 0 0px #b800e6, 0 0 10px #2de0f0,
-    0 0 20px #2de0f0, 0 0 30px #2de0f0, 0 0 10px #2de0f0, 0 0 8px #2de0f0;
+  text-shadow: 0 0 0px #620279, 0 0 0px, 0 0 10px rgb(158, 135, 104),
+    0 0 20px rgb(158, 135, 104), 0 0 30px rgb(158, 135, 104),
+    0 0 10px rgb(158, 135, 104), 0 0 8px rgb(158, 135, 104);
 }
 .menu-titles {
   font-size: 35px;
   margin: 90px;
   color: #ffffff;
-  text-shadow: 0 0 0px #ffd700, 0 0 0px #b800e6, 0 0 5px #b800e6,
-  0 0 10px #ffd700, 0 0 15px #ffd700, 0 0 5px #ffd700, 0 0 4px #ffd700;
+  text-shadow: 0 0 0px #ffd700, 0 0 0px #b800e6, 0 0 5px tan, 0 0 10px #ffd700,
+    0 0 15px #ffd700, 0 0 5px #ffd700, 0 0 4px #ffd700;
   cursor: pointer;
   font-family: 'Bebas Neue';
   letter-spacing: 5px;
 }
-
 
 a {
   text-decoration: none;
@@ -180,13 +180,13 @@ a {
   font-size: 35px;
   margin: 70px;
   color: #ffffff;
-  text-shadow: 0 0 0px #ffffff, 0 0 0px #b800e6, 0 0 5px #b800e6,
-    0 0 10px #ffffff, 0 0 15px #ffffff, 0 0 5px #ffffff, 0 0 4px #ffffff;
+  text-shadow: 0 0 0px #ffffff, 0 0 0px #b800e6, 0 0 5px tan, 0 0 10px #ffffff,
+    0 0 15px #ffffff, 0 0 5px #ffffff, 0 0 4px #ffffff;
 }
 
 .menu-titles3:hover {
   text-shadow: 0 0 0px #620279, 0 0 0px #b800e6, 0 0 10px #2de0f0,
-  0 0 20px #2de0f0, 0 0 30px #2de0f0, 0 0 10px #2de0f0, 0 0 8px #2de0f0;
+    0 0 20px #2de0f0, 0 0 30px #2de0f0, 0 0 10px #2de0f0, 0 0 8px #2de0f0;
 }
 
 .menu-titles2 {
@@ -197,26 +197,25 @@ a {
   font-size: 35px;
   margin: 70px;
   color: #ffffff;
-  text-shadow: 0 0 0px #ffffff, 0 0 0px #b800e6, 0 0 5px #b800e6,
-  0 0 10px #ffffff, 0 0 15px #ffffff, 0 0 5px #ffffff, 0 0 4px #ffffff;
+  text-shadow: 0 0 0px #ffffff, 0 0 0px #b800e6, 0 0 5px tan, 0 0 10px #ffffff,
+    0 0 15px #ffffff, 0 0 5px #ffffff, 0 0 4px #ffffff;
 }
 
-.menu-titles2:hover{
+.menu-titles2:hover {
   text-shadow: 0 0 0px #620279, 0 0 0px #b800e6, 0 0 10px #b800e6,
-  0 0 20px #b800e6, 0 0 30px #b800e6, 0 0 10px #b800e6, 0 0 8px #b800e6;
+    0 0 20px #b800e6, 0 0 30px #b800e6, 0 0 10px #b800e6, 0 0 8px #b800e6;
 }
 
 .pad {
   padding: 4px;
 }
 
-
 .subscribe {
   position: absolute;
   height: 140px;
   width: 240px;
   padding: 20px;
-  background-color: #FFF;
+  background-color: #fff;
   border-radius: 4px;
   color: #333;
   box-shadow: 0px 0px 60px 5px rgba(0, 0, 0, 0.4);
@@ -224,7 +223,7 @@ a {
 
 .subscribe:after {
   position: absolute;
-  content: "";
+  content: '';
   right: -10px;
   bottom: 18px;
   width: 0;
@@ -250,13 +249,14 @@ a {
   padding: 10px;
   width: 82%;
   background: transparent;
-  transition: all .25s ease;
+  transition: all 0.25s ease;
 }
 
 .subscribe input:focus {
   outline: none;
-  border-bottom: 1px solid #a78e03;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', 'sans-serif';
+  border-bottom: 1px solid #f4cf00;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+    'sans-serif';
 }
 
 .subscribe .submit-btn {
@@ -265,7 +265,7 @@ a {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
   background-color: #ffd700;
-  color: #FFF;
+  color: #fff;
   padding: 12px 25px;
   display: inline-block;
   font-size: 12px;
@@ -274,7 +274,7 @@ a {
   right: -10px;
   bottom: -20px;
   cursor: pointer;
-  transition: all .25s ease;
+  transition: all 0.25s ease;
   box-shadow: -5px 6px 20px 0px rgba(26, 26, 26, 0.4);
 }
 
