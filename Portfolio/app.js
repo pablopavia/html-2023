@@ -82,7 +82,7 @@ $('.cross-flex').click(function () {
 // IMAGEN DISPERSION
 $('.image4').click(function () {
   console.log('click en imagen');
-  $('.imagen-4').removeClass('blocked');
+  $('.imagen-desplegable4').removeClass('blocked');
   $('.imagen-desplegable4').addClass('activo');
   $('.transparent-box').removeClass('blocked');
   $('.transparent-box').addClass('activo');
@@ -124,6 +124,31 @@ $('.transparent-box').click(function () {
 $('.cross-flex').click(function () {
   $('.imagen-desplegable5').removeClass('activo');
   $('.imagen-desplegable5').addClass('blocked');
+  $('.transparent-box').addClass('blocked');
+  $('.transparent-box').removeClass('activo');
+});
+
+// IMAGEN APPLEAD
+
+$('.image6').click(function () {
+  console.log('click en imagen');
+  $('.imagen-6').removeClass('blocked');
+  $('.imagen-desplegable6').addClass('activo');
+  $('.transparent-box').removeClass('blocked');
+  $('.transparent-box').addClass('activo');
+});
+
+$('.transparent-box').click(function () {
+  console.log('click fuera de la imagen');
+  $('.imagen-desplegable6').removeClass('activo');
+  $('.imagen-desplegable6').addClass('blocked');
+  $('.transparent-box').addClass('blocked');
+  $('.transparent-box').removeClass('activo');
+});
+
+$('.cross-flex').click(function () {
+  $('.imagen-desplegable6').removeClass('activo');
+  $('.imagen-desplegable6').addClass('blocked');
   $('.transparent-box').addClass('blocked');
   $('.transparent-box').removeClass('activo');
 });

@@ -15,8 +15,11 @@ h2,
 h3,
 h4 {
   margin: 0;
+  color: black;
 }
-
+.mrgn {
+  margin-top: 10px;
+}
 /*
  
 --theme-color: #14bfb5;
@@ -360,6 +363,22 @@ a {
   animation-duration: 0.8s;
   animation-fill-mode: forwards;
 }
+.imagen-desplegable6 {
+  width: 60%;
+  height: 750px;
+  position: fixed;
+  top: 200px;
+  left: 750px;
+  right: 0;
+  background-color: #ffffff;
+  z-index: 100;
+  animation-fill-mode: forwards;
+  border-radius: 20px;
+  animation-name: scale2;
+  animation-iteration-count: 1;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+}
 .transparent-box {
   position: fixed;
   width: 100%;
@@ -437,6 +456,10 @@ a {
   width: 60%;
   height: 100%;
 }
+.imagen-apple {
+  width: 50%;
+  height: 100%;
+}
 
 .flex-box {
   height: 690px;
@@ -487,6 +510,12 @@ a {
   width: 37%;
 }
 
+.desc-apple {
+  margin-left: 40px;
+  text-align: center;
+  width: 37%;
+}
+
 .desc-title {
   color: black;
   text-align: center;
@@ -519,7 +548,8 @@ a {
   .imagen-desplegable2,
   .imagen-desplegable3,
   .imagen-desplegable4,
-  .imagen-desplegable5 {
+  .imagen-desplegable5,
+  .imagen-desplegable6 {
     right: 307px !important;
     left: 0;
     width: 100%;

@@ -294,7 +294,21 @@ h4 {
   padding: 15px;
   flex-wrap: wrap;
 }
+.row2 {
+}
+.column3 {
+  width: 250px;
+  border: rgb(12, 2, 36) 3px solid;
+  border-radius: 15px;
+  background-color: rgb(12, 2, 36);
+  cursor: pointer;
+}
 
+.column3:hover {
+  box-shadow: 0px 1px 2px rgb(162, 0, 255), 0px 2px 8px rgb(162, 0, 255),
+    0px 4px 15px rgb(162, 0, 255), 0px 8px 20px rgb(162, 0, 255);
+  border: #fff 3px solid;
+}
 .column {
   width: 23%;
   border: rgb(12, 2, 36) 3px solid;
@@ -451,8 +465,17 @@ a {
     width: 100%;
   }
   .margin-box {
-    max-width: 1200px;
     width: 100%;
+  }
+}
+
+@media (max-width: 1075px) {
+  .row {
+    justify-content: space-around;
+  }
+
+  .column2 {
+    width: 27%;
   }
 }
 
@@ -509,6 +532,9 @@ a {
   .bar {
     display: none;
   }
+  .column3 {
+    margin-top: 20px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -536,19 +562,11 @@ a {
 
 @media (max-width: 1000px) {
   .icon-box2 {
-    flex-direction: row;
-    align-items: center;
     gap: 5px;
   }
   .icon-box,
   .icon-box2 {
     width: 100%;
     height: auto;
-  }
-  .row {
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
   }
 }

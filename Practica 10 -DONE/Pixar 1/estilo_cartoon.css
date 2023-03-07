@@ -386,6 +386,32 @@ h3 {
 .gg-menu {
   display: none;
 }
+.menu-button {
+  width: 70px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  display: none;
+}
+
+.menu-burger {
+  width: 35px;
+  height: 3px;
+  background-color: #0000009b;
+  margin: 6px 0;
+}
+.menu-circle {
+  width: 68px;
+  height: 70px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10%;
+  cursor: pointer;
+}
 
 @media (max-width: 990px) {
   .movie {
@@ -395,9 +421,9 @@ h3 {
   .boton-style {
     display: none;
   }
+
   .menu-button {
-    height: 22px;
-    width: 22px;
+    display: flex;
   }
 
   .gg-menu {
