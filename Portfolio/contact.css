@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color: tan;
+  background-color:#60027ac4;
   color: rgb(255, 255, 255);
   margin: 0;
   font-family: 'Raleway', sans-serif;
@@ -14,7 +14,8 @@ h1,
 h2,
 h3,
 h4 {
-  margin: 0;
+  margin-bottom: 50px   ;
+  
 }
 
 /*
@@ -29,6 +30,10 @@ background-color: rgb(32, 31, 31);
 06 Cinema 4D
 07 Dirección de Arte
 08 Product Design
+
+
+
+https://webflow.com/made-in-webflow/website/produx-design-website
 */
 
 .topm {
@@ -209,116 +214,37 @@ a {
 .pad {
   padding: 4px;
 }
-/* AQUI ACABA EL HOME CSS */
 
-/* .subscribe {
-  position: absolute;
-  height: 140px;
-  width: 240px;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 4px;
-  color: #333;
-  box-shadow: 0px 0px 60px 5px rgba(0, 0, 0, 0.4);
+
+/*
+Aqui empieza contact.css
+*/
+
+.touch-box{
+  width: 100%;
+height: 40%;
+padding: 20px;
+border-radius: 20px;
+margin-top: 50px;
+margin-bottom: 50px;
 }
 
-.subscribe:after {
-  position: absolute;
-  content: '';
-  right: -10px;
-  bottom: 18px;
-  width: 0;
-  height: 0;
-  border-left: 0px solid transparent;
-  border-right: 10px solid transparent;
-  border-bottom: 10px solid #1a044e;
+.touch-text{
+font-size: 40px;
+
 }
 
-.subscribe p {
-  text-align: center;
-  font-size: 20px;
-  font-weight: bold;
-  letter-spacing: 4px;
-  line-height: 28px;
+.touch-sub{
+  font-size: 30px !important;
 }
 
-.subscribe input {
-  position: absolute;
-  bottom: 30px;
-  border: none;
-  border-bottom: 1px solid #d4d4d4;
-  padding: 10px;
-  width: 82%;
-  background: transparent;
-  transition: all 0.25s ease;
+.flex-flex{
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
-.subscribe input:focus {
-  outline: none;
-  border-bottom: 1px solid #f4cf00;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
-    'sans-serif';
-}
-
-.subscribe .submit-btn {
-  position: absolute;
-  border-radius: 30px;
-  border-bottom-right-radius: 0;
-  border-top-right-radius: 0;
-  background-color: #ffd700;
-  color: #fff;
-  padding: 12px 25px;
-  display: inline-block;
-  font-size: 12px;
-  font-weight: bold;
-  letter-spacing: 5px;
-  right: -10px;
-  bottom: -20px;
-  cursor: pointer;
-  transition: all 0.25s ease;
-  box-shadow: -5px 6px 20px 0px rgba(26, 26, 26, 0.4);
-}
-
-.subscribe .submit-btn:hover {
-  background-color: #d1b201;
-  box-shadow: -5px 6px 20px 0px rgba(88, 88, 88, 0.569);
-}
-
-form {
-  margin: 20px;
-  padding: 10px;
-  border: 2px solid #ffffff;
-  border-radius: 5px;
-  width: 50%;
-}
-
-label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-input[type='text'],
-input[type='email'] {
-  display: block;
-  width: 50%;
-  padding: 5px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-input[type='submit'] {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  cursor: pointer;
-}
-
-input[type='submit']:hover {
-  background-color: #0069d9;
-} */
 
 .flex-box {
   display: flex;
@@ -326,3 +252,85 @@ input[type='submit']:hover {
   justify-content: center;
   align-items: center;
 }
+
+
+
+
+
+@media (max-width: 900px) {
+  .first-web-box {
+    width: 99%;
+  }
+
+  .work-box {
+    height: 450px;
+  }
+  @keyframes scale {
+    0% {
+      transform: scale(0%);
+    }
+
+    100% {
+      transform: scale(100%);
+    }
+  }
+  .html-box {
+    height: 170px;
+  }
+  .html-box2 {
+    height: 100px;
+  }
+
+  h2 {
+    font-size: 42px;
+  }
+  .services {
+    font-size: 45px;
+  }
+  .download-cv {
+    width: 140px;
+
+    border-radius: 8px;
+    font-size: 20px;
+    padding: 0px 3px;
+  }
+  .welcome-box {
+    width: 70%;
+  }
+
+  .button-box {
+    justify-content: space-around;
+    width: 500px;
+  }
+
+  .topm {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .column {
+    width: 100%;
+  }
+  .contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .first-row {
+    justify-content: space-around;
+  }
+  .menu-button {
+    display: block;
+  }
+
+  .menu-titles,
+  .menu-titles2,
+  .menu-titles3 {
+    display: none;
+  }
+  .bar {
+    display: none;
+  }
+}
+
+
