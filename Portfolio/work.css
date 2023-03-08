@@ -552,6 +552,16 @@ a {
   border-radius: 20px;
   padding: 15px;
 }
+.html-box2 {
+  width: 65%;
+  height: 80px;
+  background-color: #ffffffcf;
+  margin-bottom: 40px;
+  margin-top: 20px;
+  border: #000000 3px solid;
+  border-radius: 20px;
+  padding: 15px;
+}
 
 .html-description {
   font-size: 18px;
@@ -579,7 +589,7 @@ a {
   .imagen-desplegable1,
   .imagen-desplegable3,
   .imagen-desplegable5 {
-    width: 70%;
+    width: 76%;
     left: -45px;
   }
 }
@@ -592,8 +602,7 @@ a {
     left: 285px;
   }
   .imagen-desplegable1,
-  .imagen-desplegable3,
-  655 {
+  .imagen-desplegable3 {
     width: 85%;
     left: -225px;
   }
@@ -627,15 +636,7 @@ a {
   }
 }
 
-@media (max-width: 1300px) {
-  .menu-button {
-    width: 100px;
-  }
-  .first-web {
-    max-width: 1200px;
-    width: 100%;
-  }
-
+@media (max-width: 1400px) {
   .imagen-desplegable1,
   .imagen-desplegable2,
   .imagen-desplegable3,
@@ -645,7 +646,6 @@ a {
     right: 307px !important;
     left: 0;
     width: 100%;
-    top: 0;
   }
   @keyframes scale {
     0% {
@@ -680,6 +680,16 @@ a {
   }
 }
 
+@media (max-width: 1300px) {
+  .menu-button {
+    width: 100px;
+  }
+  .first-web {
+    max-width: 1200px;
+    width: 100%;
+  }
+}
+
 @media (max-width: 1150px) {
   .imagen {
     display: none;
@@ -705,17 +715,24 @@ a {
     margin: 15px;
   }
   .work-box {
-    height: 100%;
+    height: 617px;
     width: 100%;
   }
   .html-box {
     height: 150px;
   }
+  .html-box2 {
+    height: 110px;
+  }
 }
 
-@media (max-width: 830px) {
+@media (max-width: 900px) {
   .first-web-box {
     width: 99%;
+  }
+
+  .work-box {
+    height: 450px;
   }
   @keyframes scale {
     0% {
@@ -728,6 +745,9 @@ a {
   }
   .html-box {
     height: 170px;
+  }
+  .html-box2 {
+    height: 100px;
   }
 
   h2 {
@@ -782,13 +802,17 @@ a {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 750px) {
   .column {
     width: 100%;
     margin-bottom: 20px;
   }
   .html-box {
     height: 200px;
+  }
+
+  .work-box {
+    height: 100%;
   }
 
   .icon-box,
@@ -800,5 +824,20 @@ a {
     flex-direction: row;
     align-items: center;
     gap: 5px;
+  }
+}
+
+@media (max-width: 550px) {
+  .html-box {
+    height: 230px;
+  }
+  .html-box2 {
+    height: 130px;
+  }
+}
+
+@media (max-width: 550px) {
+  .html-box {
+    height: 280px;
   }
 }
