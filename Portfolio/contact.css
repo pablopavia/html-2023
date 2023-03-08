@@ -209,8 +209,9 @@ a {
 .pad {
   padding: 4px;
 }
+/* AQUI ACABA EL HOME CSS */
 
-.subscribe {
+/* .subscribe {
   position: absolute;
   height: 140px;
   width: 240px;
@@ -289,7 +290,6 @@ form {
   border: 2px solid #ffffff;
   border-radius: 5px;
   width: 50%;
-  
 }
 
 label {
@@ -297,8 +297,8 @@ label {
   margin-bottom: 5px;
 }
 
-input[type="text"],
-input[type="email"] {
+input[type='text'],
+input[type='email'] {
   display: block;
   width: 50%;
   padding: 5px;
@@ -307,7 +307,7 @@ input[type="email"] {
   border-radius: 5px;
 }
 
-input[type="submit"] {
+input[type='submit'] {
   background-color: #007bff;
   color: #fff;
   border: none;
@@ -316,12 +316,13 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-input[type="submit"]:hover {
+input[type='submit']:hover {
   background-color: #0069d9;
-}
+} */
 
-.flex-box{
+.flex-box {
   display: flex;
-  
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
 }

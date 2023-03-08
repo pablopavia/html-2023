@@ -254,11 +254,11 @@ a {
   width: 50%;
   position: relative;
   border-radius: 15px;
-  transition: all .2s;
+  transition: all 0.2s;
 }
-.work-box:hover{
-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.8), 0px 2px 8px rgba(21, 21, 21, 0.8),
-0px 4px 15px rgba(32, 32, 32, 0.800), 0px 8px 10px rgba(32, 32, 32, 0.800);
+.work-box:hover {
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.8), 0px 2px 8px rgba(21, 21, 21, 0.8),
+    0px 4px 15px rgba(32, 32, 32, 0.8), 0px 8px 10px rgba(32, 32, 32, 0.8);
 }
 .image1,
 .image,
@@ -288,7 +288,7 @@ box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.8), 0px 2px 8px rgba(21, 21, 21, 0.8),
 
 /* AQUI ES EL JS DE CUANDO CLICK EN IMAGEN */
 .imagen-desplegable1 {
-  width: 60%;
+  width: 65%;
   height: 750px;
   position: fixed;
   top: 200px;
@@ -305,11 +305,11 @@ box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.8), 0px 2px 8px rgba(21, 21, 21, 0.8),
 }
 
 .imagen-desplegable2 {
-  width: 60%;
+  width: 65%;
   height: 750px;
   position: fixed;
   top: 200px;
-  left: 750px;
+  left: 680px;
   right: 0;
   background-color: #ffffff;
   z-index: 100;
@@ -321,7 +321,7 @@ box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.8), 0px 2px 8px rgba(21, 21, 21, 0.8),
   animation-fill-mode: forwards;
 }
 .imagen-desplegable3 {
-  width: 60%;
+  width: 65%;
   height: 750px;
   position: fixed;
   top: 100px;
@@ -338,11 +338,11 @@ box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.8), 0px 2px 8px rgba(21, 21, 21, 0.8),
 }
 
 .imagen-desplegable4 {
-  width: 60%;
+  width: 65%;
   height: 750px;
   position: fixed;
   top: 200px;
-  left: 750px;
+  left: 680px;
   right: 0;
   background-color: #ffffff;
   z-index: 100;
@@ -354,7 +354,7 @@ box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.8), 0px 2px 8px rgba(21, 21, 21, 0.8),
   animation-fill-mode: forwards;
 }
 .imagen-desplegable5 {
-  width: 60%;
+  width: 65%;
   height: 750px;
   position: fixed;
   top: 200px;
@@ -370,11 +370,11 @@ box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.8), 0px 2px 8px rgba(21, 21, 21, 0.8),
   animation-fill-mode: forwards;
 }
 .imagen-desplegable6 {
-  width: 60%;
+  width: 65%;
   height: 750px;
   position: fixed;
   top: 200px;
-  left: 750px;
+  left: 680px;
   right: 0;
   background-color: #ffffff;
   z-index: 100;
@@ -542,12 +542,10 @@ box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.8), 0px 2px 8px rgba(21, 21, 21, 0.8),
   width: 100%;
 }
 
-
-
-.html-box{
+.html-box {
   width: 65%;
   height: 120px;
-  background-color:#ffffffcf;
+  background-color: #ffffffcf;
   margin-bottom: 40px;
   margin-top: 20px;
   border: #000000 3px solid;
@@ -555,19 +553,80 @@ box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.8), 0px 2px 8px rgba(21, 21, 21, 0.8),
   padding: 15px;
 }
 
-.html-description{
+.html-description {
   font-size: 18px;
   text-align: center;
   color: #000000;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.row2{
+.row2 {
   display: flex;
   justify-content: center;
-
 }
 /* MEDIA, NO PASES DEBAJO */
+
+/* MEDIA DE LAS IMAGENES DESPLEGABLES */
+
+@media (max-width: 2300px) {
+  .imagen-desplegable2,
+  .imagen-desplegable4,
+  .imagen-desplegable6 {
+    width: 75%;
+    left: 390px;
+  }
+  .imagen-desplegable1,
+  .imagen-desplegable3,
+  .imagen-desplegable5 {
+    width: 70%;
+    left: -45px;
+  }
+}
+
+@media (max-width: 1850px) {
+  .imagen-desplegable2,
+  .imagen-desplegable4,
+  .imagen-desplegable6 {
+    width: 85%;
+    left: 285px;
+  }
+  .imagen-desplegable1,
+  .imagen-desplegable3,
+  655 {
+    width: 85%;
+    left: -225px;
+  }
+}
+
+@media (max-width: 1650px) {
+  .imagen-desplegable2,
+  .imagen-desplegable4,
+  .imagen-desplegable6 {
+    width: 95%;
+    left: 235px;
+  }
+  .imagen-desplegable1,
+  .imagen-desplegable3 {
+    width: 95%;
+    left: -270px;
+  }
+}
+
+@media (max-width: 1475px) {
+  .imagen-desplegable2,
+  .imagen-desplegable4,
+  .imagen-desplegable6 {
+    width: 100%;
+    left: 200px;
+  }
+  .imagen-desplegable1,
+  .imagen-desplegable3 {
+    width: 100%;
+    left: -300px;
+  }
+}
+
 @media (max-width: 1300px) {
   .menu-button {
     width: 100px;
@@ -621,7 +680,7 @@ box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.8), 0px 2px 8px rgba(21, 21, 21, 0.8),
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1150px) {
   .imagen {
     display: none;
   }
@@ -649,6 +708,9 @@ box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.8), 0px 2px 8px rgba(21, 21, 21, 0.8),
     height: 100%;
     width: 100%;
   }
+  .html-box {
+    height: 150px;
+  }
 }
 
 @media (max-width: 830px) {
@@ -663,6 +725,9 @@ box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.8), 0px 2px 8px rgba(21, 21, 21, 0.8),
     100% {
       transform: scale(100%);
     }
+  }
+  .html-box {
+    height: 170px;
   }
 
   h2 {
@@ -722,6 +787,9 @@ box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.8), 0px 2px 8px rgba(21, 21, 21, 0.8),
     width: 100%;
     margin-bottom: 20px;
   }
+  .html-box {
+    height: 200px;
+  }
 
   .icon-box,
   .icon-box2 {
@@ -733,7 +801,4 @@ box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.8), 0px 2px 8px rgba(21, 21, 21, 0.8),
     align-items: center;
     gap: 5px;
   }
-}
-
-@media screen and (max-width: 480px) {
 }
