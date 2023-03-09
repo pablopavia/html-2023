@@ -289,7 +289,7 @@ a {
 /* AQUI ES EL JS DE CUANDO CLICK EN IMAGEN */
 .imagen-desplegable1 {
   width: 65%;
-  height: 750px;
+
   position: fixed;
   top: 200px;
   left: 250px;
@@ -306,9 +306,9 @@ a {
 
 .imagen-desplegable2 {
   width: 65%;
-  height: 750px;
+
   position: fixed;
-  top: 200px;
+  top: 5%;
   left: 680px;
   right: 0;
   background-color: #ffffff;
@@ -322,11 +322,12 @@ a {
 }
 .imagen-desplegable3 {
   width: 65%;
-  height: 750px;
+
   position: fixed;
-  top: 100px;
+  top: 5%;
   left: 250px;
   right: 0;
+
   background-color: #ffffff;
   z-index: 100;
   animation-fill-mode: forwards;
@@ -339,9 +340,9 @@ a {
 
 .imagen-desplegable4 {
   width: 65%;
-  height: 750px;
+
   position: fixed;
-  top: 200px;
+  top: 5%;
   left: 680px;
   right: 0;
   background-color: #ffffff;
@@ -355,9 +356,9 @@ a {
 }
 .imagen-desplegable5 {
   width: 65%;
-  height: 750px;
+
   position: fixed;
-  top: 200px;
+  top: 5%;
   left: 250px;
   right: 0;
   background-color: #ffffff;
@@ -371,9 +372,9 @@ a {
 }
 .imagen-desplegable6 {
   width: 65%;
-  height: 750px;
+
   position: fixed;
-  top: 200px;
+  top: 5%;
   left: 680px;
   right: 0;
   background-color: #ffffff;
@@ -441,32 +442,42 @@ a {
   flex-direction: row;
   height: 20px;
   justify-content: flex-end;
-  margin-right: 20px;
+  margin-left: 15px;
   margin-top: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 .imagen-rayo {
   width: calc(600px + 50%);
   height: 100%;
+  line-height: 0;
 }
 .imagen-tron {
   width: 77%;
   height: 100%;
+  line-height: 0;
 }
 .imagen-polares {
   width: 58%;
   height: 100%;
+  line-height: 0;
 }
 .imagen-disp {
   width: 60%;
   height: 100%;
+  line-height: 0;
 }
 .imagen-moloko {
   width: 60%;
   height: 100%;
+  line-height: 0;
 }
 .imagen-apple {
   width: 50%;
   height: 100%;
+  line-height: 0;
+  object-position: center 45%;
 }
 
 .flex-box {
@@ -476,7 +487,7 @@ a {
 }
 .imagen {
   border-radius: 20px;
-  margin-left: 20px;
+
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -530,11 +541,23 @@ a {
   font-weight: 500;
   font-size: 25px;
   letter-spacing: 2px;
-  margin-top: 20px;
+  margin-top: 175px;
+}
+.desc {
+  font-size: 20px;
+  margin-top: 45px;
+  color: black;
+  margin-right: 25px;
 }
 
 .cross {
   cursor: pointer;
+  transition: all 0.2s;
+  margin-right: 15px;
+}
+
+.cross:hover {
+  transform: scale(120%);
 }
 
 .work {
@@ -575,6 +598,7 @@ a {
   display: flex;
   justify-content: center;
 }
+
 /* MEDIA, NO PASES DEBAJO */
 
 /* MEDIA DE LAS IMAGENES DESPLEGABLES */
@@ -628,7 +652,6 @@ a {
   .imagen-desplegable6 {
     width: 100%;
     left: 200px;
-    
   }
   .imagen-desplegable1,
   .imagen-desplegable3 {
@@ -839,7 +862,4 @@ a {
 }
 
 @media (max-width: 550px) {
-  .html-box {
-    height: 30px;
-  }
 }

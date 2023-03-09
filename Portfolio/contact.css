@@ -3,7 +3,12 @@
 }
 
 body {
-  background-color:#60027ac4;
+  background-color: rgb(75, 0, 130);
+  background: linear-gradient(
+    164deg,
+    rgba(75, 0, 130, 0.7483368347338936) 36%,
+    rgba(128, 0, 128, 0.7483368347338936) 85%
+  );
   color: rgb(255, 255, 255);
   margin: 0;
   font-family: 'Raleway', sans-serif;
@@ -14,8 +19,7 @@ h1,
 h2,
 h3,
 h4 {
-  margin-bottom: 50px   ;
-  
+  margin-bottom: 50px;
 }
 
 /*
@@ -215,36 +219,33 @@ a {
   padding: 4px;
 }
 
-
 /*
 Aqui empieza contact.css
 */
 
-.touch-box{
+.touch-box {
   width: 100%;
-height: 40%;
-padding: 20px;
-border-radius: 20px;
-margin-top: 50px;
-margin-bottom: 50px;
+  height: 40%;
+  padding: 20px;
+  border-radius: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
-.touch-text{
-font-size: 40px;
-
+.touch-text {
+  font-size: 40px;
 }
 
-.touch-sub{
+.touch-sub {
   font-size: 30px !important;
 }
 
-.flex-flex{
-  display:flex;
+.flex-flex {
+  display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
 }
-
 
 .flex-box {
   display: flex;
@@ -252,10 +253,6 @@ font-size: 40px;
   justify-content: center;
   align-items: center;
 }
-
-
-
-
 
 @media (max-width: 900px) {
   .first-web-box {
@@ -332,5 +329,3 @@ font-size: 40px;
     display: none;
   }
 }
-
-
