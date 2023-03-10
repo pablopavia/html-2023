@@ -94,6 +94,15 @@ background-color: rgb(32, 31, 31);
   box-shadow: 0px 1px 2px rgb(162, 0, 255), 0px 2px 8px rgb(162, 0, 255),
     0px 4px 15px rgb(162, 0, 255), 0px 8px 20px rgb(162, 0, 255);
 }
+.transparent-box {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  top: 0;
+
+  background-color: rgba(131, 111, 111, 0.08);
+}
 
 .first-web {
   width: 100%;
@@ -155,14 +164,15 @@ background-color: rgb(32, 31, 31);
 }
 
 .welcome-box {
-  width: 50%;
+  width: 80%;
   height: 100%;
-
+  padding: 20px;
   font-size: 30px;
   padding-top: 70px;
   line-height: 70px;
-  border: #fff 3px solid;
-  background-color: rgb(12, 2, 36);
+  /* border: #fff 3px solid; */
+  /* background-color: rgb(12, 2, 36); */
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -171,6 +181,39 @@ background-color: rgb(32, 31, 31);
   border-radius: 5px;
   padding-bottom: 20px;
 }
+.hidden {
+  overflow: hidden;
+}
+.who-box {
+  width: 40%;
+  background-color: rgb(12, 2, 36);
+  height: 75px;
+  margin-top: 40px;
+  border-radius: 5px;
+  text-align: center;
+  font-family: 'Alata', sans-serif;
+  font-family: 'EB Garamond', serif;
+  font-family: 'Orbitron', sans-serif;
+  border: 2px rgb(12, 2, 36) solid;
+  padding: 5px;
+  cursor: pointer;
+}
+.flex-popup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.who-popup {
+  position: fixed;
+  background-color: #74086f;
+  top: 10%;
+  animation-name: scale;
+  height: 30%;
+  width: 50%;
+}
+.who-box:hover {
+  border: white 2px solid;
+}
 
 .neon-text {
   font-size: 40px;
@@ -178,6 +221,7 @@ background-color: rgb(32, 31, 31);
   text-shadow: 0 0 0px #620279, 0 0 0px #b800e6, 0 0 10px #b800e6,
     0 0 20px #b800e6, 0 0 30px #b800e6, 0 0 10px #b800e6, 0 0 8px #b800e6;
   text-align: center;
+  font-family: 'IBM Plex Mono', monospace;
 }
 
 .icon-text {
@@ -239,6 +283,8 @@ background-color: rgb(32, 31, 31);
   justify-content: center;
   align-items: center;
   font: caption;
+  margin-left: 25px;
+  margin-right: 25px;
 }
 .menu-burger {
   width: 35px;
@@ -250,12 +296,12 @@ background-color: rgb(32, 31, 31);
   height: 1px;
   width: 15%;
   border: #ffffff 1px solid;
-  margin-top: 32px;
+  margin-top: 41px;
 }
 
 .services {
   white-space: nowrap;
-
+  font-family: 'IBM Plex Mono', monospace;
   text-align: center;
   font-size: 60px;
 
@@ -289,6 +335,8 @@ h4 {
   text-align: center;
   font-size: 40px;
   white-space: nowrap;
+  font-family: 'IBM Plex Mono', monospace;
+  font: bolder;
 }
 .bc {
   margin-bottom: 10px;
@@ -383,6 +431,7 @@ a {
   text-shadow: 0 0 0px #620279, 0 0 0px #b800e6, 0 0 10px #b800e6,
     0 0 20px #b800e6, 0 0 30px #b800e6, 0 0 10px #b800e6, 0 0 8px #b800e6;
   font-family: 'Bebas Neue';
+
   letter-spacing: 5px;
 }
 .mrgn {
