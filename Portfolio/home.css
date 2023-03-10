@@ -181,9 +181,7 @@ background-color: rgb(32, 31, 31);
   border-radius: 5px;
   padding-bottom: 20px;
 }
-.hidden {
-  overflow: hidden;
-}
+
 .who-box {
   width: 40%;
   background-color: rgb(12, 2, 36);
