@@ -170,6 +170,7 @@ $('.cross-flex').click(function () {
   $('.transparent-box').addClass('blocked');
   $('.transparent-box').removeClass('activo');
   $('body').removeClass('hidden');
+
   //- > CERRAR -> Quitar la case blocked
 });
 
@@ -185,6 +186,14 @@ $('.who-box').click(function () {
   // $('.transparent-box').removeClass('activo');
 });
 
-// NO SE VE -> Tener la clase blocked -> CERRADO
 
-$('.imagen-desplegable2');
+// HOME CLICK FOR WORKS
+function scrollToSection() {
+  var section = document.getElementById("html-box");
+  section.scrollIntoView();
+}
+
+
+
+
+
