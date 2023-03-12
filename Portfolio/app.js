@@ -162,6 +162,9 @@ $('.transparent-box').click(function () {
   $('.transparent-box').removeClass('activo');
   $('.who-popup').addClass('blocked');
   $('body').removeClass('hidden');
+  $('.welcome-box').removeClass('blocked');
+  $('.glass-container').removeClass('blocked');
+  $('.small-desc').removeClass('blocked');
 });
 
 $('.cross-flex').click(function () {
@@ -170,6 +173,8 @@ $('.cross-flex').click(function () {
   $('.transparent-box').addClass('blocked');
   $('.transparent-box').removeClass('activo');
   $('body').removeClass('hidden');
+ 
+
 
   //- > CERRAR -> Quitar la case blocked
 });
@@ -179,19 +184,33 @@ $('.cross-flex').click(function () {
 $('.who-box').click(function () {
   console.log('click a caja who am i');
   $('.who-popup').removeClass('blocked');
-  //  SE VE
-  // $('.who-popup').addClass('activo');
 
+$('.welcome-box').addClass('blocked');
+$('.glass-container').addClass('blocked');
+$('.small-desc').addClass('blocked');
   $('.transparent-box').removeClass('blocked');
-  // $('.transparent-box').removeClass('activo');
+
 });
 
+$('.cross').click(function () {
+  $('.who-popup').addClass('blocked');
+  $('.transparent-box').addClass('blocked');
+  $('.transparent-box').removeClass('activo');
+  $('.welcome-box').removeClass('blocked');
+$('.glass-container').removeClass('blocked');
+$('.small-desc').removeClass('blocked');
+});
 
 // HOME CLICK FOR WORKS
 function scrollToSection() {
   var section = document.getElementById("html-box");
   section.scrollIntoView();
 }
+
+
+
+
+
 
 
 
