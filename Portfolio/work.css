@@ -3,7 +3,12 @@
 }
 
 body {
-  background-color: #4b0082;
+  background: #800080;
+  background: linear-gradient(
+      164deg,
+      rgba(75, 0, 130, 0.8463760504201681) 33%,
+      rgba(128, 0, 128, 0.7483368347338936) 92%
+  );
   color: rgb(255, 255, 255);
   margin: 0;
   font-family: 'Raleway', sans-serif;
@@ -162,8 +167,27 @@ h4 {
 
 .bar {
   font-size: 40px;
-  text-shadow: 0 0 0px #620279, 0 0 0px #b800e6, 0 0 10px #2de0f0,
-    0 0 20px #2de0f0, 0 0 30px #2de0f0, 0 0 10px #2de0f0, 0 0 8px #2de0f0;
+  text-shadow: 0 0 0px #620279, 0 0 0px #b800e6, 0 0 10px #b800e6,
+    0 0 20px #b800e6, 0 0 30px #b800e6, 0 0 10px #b800e6, 0 0 8px #b800e6;
+}
+.close-an{
+  animation-name: closeim;
+  animation-duration: .5s;
+}
+
+@keyframes closeim{
+  0% {
+    transform: scale(100%);
+  }
+
+  50% {
+    translate: 200px;
+  }
+
+  100% {
+    transform: scale(0%);
+    translate: 200px;
+  }
 }
 .menu-titles {
   font-size: 35px;
@@ -257,8 +281,8 @@ a {
   transition: all 0.5s;
 }
 .work-box:hover {
-  box-shadow: 0px 1px 2px #2c004bcc, 0px 2px 8px #340059ae,
-    0px 4px 15px #2b004a85, 0px 8px 10px #25003f99;
+  box-shadow: 0px 1px 2px #2c004b93, 0px 2px 8px #34005985,
+    0px 4px 15px #2b004a66, 0px 8px 10px #25003f5b;
   transform: scale(102%);
 }
 .image1,
@@ -585,20 +609,31 @@ a {
 .html-box {
   width: 65%;
   height: 120px;
-  background-color: #ffffffcf;
+  background-color: rgb(167 164 164 / 51%);
+  border-top: 1px solid rgb(255 255 255 / 74%);
+  border-left: 1px solid rgb(255 255 255 / 88%);
+  backdrop-filter: blur(5px);
+  transform-style: preserve-3d;
+  transform: perspective(800px);
+  box-shadow: 0 15px 13px rgba(0, 0, 0, 0.208);
   margin-bottom: 40px;
   margin-top: 20px;
-  border: #000000 3px solid;
   border-radius: 10px;
   padding: 15px;
 }
 .html-box2 {
   width: 65%;
   height: 80px;
-  background-color: #ffffffcf;
+  background-color: rgb(167 164 164 / 51%);
+  border-top: 1px solid rgb(255 255 255 / 74%);
+  border-left: 1px solid rgb(255 255 255 / 88%);
+  backdrop-filter: blur(5px);
+  transform-style: preserve-3d;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.208);
+  transform: perspective(800px);
   margin-bottom: 40px;
   margin-top: 20px;
-  border: #000000 3px solid;
+
   border-radius: 10px;
   padding: 15px;
 }
@@ -606,7 +641,7 @@ a {
 .html-description {
   font-size: 18px;
   text-align: center;
-  color: #000000;
+  color: #ffffff;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -875,6 +910,7 @@ a {
 @media (max-width: 550px) {
   .html-box {
     height: 230px;
+    width: 85%;
   }
   .html-box2 {
     height: 130px;
