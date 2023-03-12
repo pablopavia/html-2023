@@ -244,11 +244,13 @@ transform: translateY(300px);
   line-height: 1;
   animation-name: off;
   animation-duration: .5s;
+  text-shadow: -4px -2px 2px rgba(0, 0, 0, 0.5);
 }
 .quote{
   font-size: 24px ;
   animation-name: off;
   animation-duration: 1s;
+  text-shadow: -4px -2px 2px rgba(0, 0, 0, 0.5);
 }
 .who-box {
   border-left: 1px solid rgba(255, 255, 255, 0.304);
