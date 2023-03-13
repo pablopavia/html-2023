@@ -28,6 +28,9 @@ h3,
 h4 {
   margin: 0;
 }
+h3{
+  font-size: 1.7rem;
+}
 
 .image-fondo {
   width: 100%;
@@ -89,7 +92,7 @@ background-color: rgb(32, 31, 31);
   height: 100px;
   display: flex;
   flex-direction: row;
-  align-items: baseline;
+  align-items: flex-end;
   justify-content: center;
 }
 
@@ -137,6 +140,22 @@ background-color: rgb(32, 31, 31);
   align-items: center;
 }
 
+.contact{
+  text-align: center;
+font-size: 25px !important;
+font-weight: 200;
+margin-bottom: 10px;
+}
+.flex-another{
+  display: flex;
+  flex-direction:column;
+  justify-content: end;
+}
+.contact2{
+  font-size: 20px;
+  margin: 10px;
+}
+
 .menu-button {
   width: 120px;
   height: 100px;
@@ -157,7 +176,7 @@ background-color: rgb(32, 31, 31);
   border-radius: 10%;
   cursor: pointer;
 
-  z-index: ;
+
 }
 
 @keyframes dsds {
@@ -205,7 +224,7 @@ background-color: rgb(32, 31, 31);
   position: absolute;
   top: 9%;
   left: 28%;
-  height: 25%;
+  height: 20%;
   width: 72%;
 }
 .welcome-box {
@@ -255,7 +274,7 @@ background-color: rgb(32, 31, 31);
   align-items: center;
   position: absolute;
   height: 90px;
-  margin-top: 40px;
+  margin-top: 12%;
   border-radius: 5px;
   text-align: center;
   white-space: nowrap;
@@ -581,7 +600,7 @@ height: 200vh;
   margin-top: 60px;
 }
 h4 {
-  font-size: 23px;
+  font-size: 1.3rem;
 }
 .column2 {
   width: 250px;
@@ -671,7 +690,7 @@ h4 {
 }
 .menu-titles {
   font-size: 35px;
-  margin: 90px;
+  
   color: #ffffff;
   text-shadow: 0 0 0px #ffffff, 0 0 0px #b800e6, 0 0 5px #b800e6,
     0 0 10px #faf3fc, 0 0 15px #ffffff, 0 0 5px #ffffff, 0 0 4px #ffffff;
@@ -682,7 +701,7 @@ h4 {
 
 .menu-titles3 {
   font-size: 35px;
-  margin: 90px;
+padding-left: 40px ;
   color: #ffffff;
   text-shadow: 0 0 0px #ffffff, 0 0 0px #b800e6, 0 0 5px #b800e6,
     0 0 10px #faf3fc, 0 0 15px #ffffff, 0 0 5px #ffffff, 0 0 4px #ffffff;
@@ -705,8 +724,8 @@ a {
 }
 .menu-titles2 {
   cursor: pointer;
-  font-size: 40px;
-  margin: 70px;
+  font-size:35px;
+ padding-right: 40px;
   color: #ffffff;
   text-shadow: 0 0 0px #620279, 0 0 0px #b800e6, 0 0 10px #b800e6,
     0 0 20px #b800e6, 0 0 30px #b800e6, 0 0 10px #b800e6, 0 0 8px #b800e6;
@@ -758,28 +777,50 @@ a {
 
   min-height: 18vh;
 }
+footer {
+  
+  color: white;
+  text-align: center;
+
+
+  bottom: 0;
+  width: 100%;
+}
+
+.contact-info p {
+  margin: 10px;
+  font-size: 18px;
+}
+
+.fa {
+  margin-right: 10px;
+  color: white;
+}
+
 .last-box {
-  border: #ffffff4f 2px solid;
+  border-top: #ffffff5b 2px solid;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.553);
   margin-top: 20px;
-  box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.5);
+  border-top-right-radius: 30% ;
+  border-top-left-radius: 30%;
+  box-shadow: 0px 8px 20px 17px rgba(0, 0, 0, 0.558);
 }
 
 .inside-box {
-  padding-top: 40px;
+  padding-top: 20px;
 }
 .row-last {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 .last-text {
   font-family: 'Bebas Neue';
   white-space: nowrap;
-  font-size: 20px;
-  margin-bottom: 15px;
+  font-size: 30px;
+  margin-bottom: 7px;
   line-height: 1.5em;
   margin-top: 1.4rem;
   text-align: center;
@@ -801,6 +842,7 @@ a {
   .who-text {
     font-size: 20px;
   }
+ 
 }
 @media (max-width: 1300px) {
   .menu-button {
@@ -887,6 +929,7 @@ a {
   }
   .first-row {
     justify-content: center;
+   
   }
   /* .menu-button {
     display: flex;
@@ -900,15 +943,16 @@ a {
 
   .menu-titles2 {
     font-size: 35px;
-    margin-right: 40px;
+    margin: 0;
+    padding-right: 40px;
   }
 
   .menu-titles3 {
     font-size: 35px;
-    margin-left: 40px;
+    margin: 0;
+    padding-left: 40px;
   }
-  .bar {
-  }
+
   .column3 {
     margin-top: 20px;
   }
