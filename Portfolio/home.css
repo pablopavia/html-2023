@@ -774,7 +774,7 @@ a {
   width: 100%;
   display: flex;
   justify-content: center;
-
+  margin-top: 50px;
   min-height: 18vh;
 }
 footer {
