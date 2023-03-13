@@ -1,15 +1,11 @@
-
-
 //MENU DESPLEGABLE
-
 
 $('.menu-circle').click(function () {
   console.log('click en el menu');
   $('.menu-desplegable').removeClass('blocked');
   $('.menu-desplegable').addClass('activo');
   $('menu-desplegable').addClass('animation-menu');
-  $('.transparent-box').removeClass('blocked');
- 
+  $('menu-button').addClass('blocked');
 });
 
 // CLICK EN IMAGE RAYO
@@ -21,7 +17,6 @@ $('.image1').click(function () {
   $('.transparent-box').removeClass('blocked');
   $('.transparent-box').addClass('activo');
   $('body').addClass('hidden');
-
 });
 
 $('.transparent-box').click(function () {
@@ -34,13 +29,13 @@ $('.transparent-box').click(function () {
 });
 
 $('.cross-flex').click(function () {
-  console.log('click en cross')
+  console.log('click en cross');
   $('.imagen-desplegable1').removeClass('activo');
   $('.imagen-desplegable1').addClass('blocked');
   $('.transparent-box').addClass('blocked');
   $('.transparent-box').removeClass('activo');
   $('body').removeClass('hidden');
-  $('.imagen-desplegable1') .addClass('close-an')
+  $('.imagen-desplegable1').addClass('close-an');
 });
 
 // CLICK EN IMAGE TRON
@@ -52,7 +47,7 @@ $('.image2').click(function () {
   $('.transparent-box').removeClass('blocked');
   $('.transparent-box').addClass('activo');
   $('body').addClass('hidden');
-  $('.imagen-desplegable2')
+  $('.imagen-desplegable2');
 });
 
 $('.transparent-box').click(function () {
@@ -70,7 +65,7 @@ $('.cross-flex').click(function () {
   $('.transparent-box').addClass('blocked');
   $('.transparent-box').removeClass('activo');
   $('body').removeClass('hidden');
-  $('.imagen-desplegable2')
+  $('.imagen-desplegable2');
 });
 
 // IMAGEN COORDENADAS POLARES
@@ -81,7 +76,7 @@ $('.image3').click(function () {
   $('.transparent-box').removeClass('blocked');
   $('.transparent-box').addClass('activo');
   $('body').addClass('hidden');
-  $('.imagen-desplegable3')
+  $('.imagen-desplegable3');
 });
 
 $('.transparent-box').click(function () {
@@ -99,7 +94,7 @@ $('.cross-flex').click(function () {
   $('.transparent-box').addClass('blocked');
   $('.transparent-box').removeClass('activo');
   $('body').removeClass('hidden');
-  $('.imagen-desplegable3')
+  $('.imagen-desplegable3');
 });
 
 // IMAGEN DISPERSION
@@ -110,7 +105,7 @@ $('.image4').click(function () {
   $('.transparent-box').removeClass('blocked');
   $('.transparent-box').addClass('activo');
   $('.body').addClass('hidden');
-  $('.imagen-desplegable4')
+  $('.imagen-desplegable4');
 });
 
 $('.transparent-box').click(function () {
@@ -128,7 +123,7 @@ $('.cross-flex').click(function () {
   $('.transparent-box').addClass('blocked');
   $('.transparent-box').removeClass('activo');
   $('body').removeClass('hidden');
-  $('.imagen-desplegable4')
+  $('.imagen-desplegable4');
 });
 
 // IMAGEN MOLOKO
@@ -140,7 +135,7 @@ $('.image5').click(function () {
   $('.transparent-box').removeClass('blocked');
   $('.transparent-box').addClass('activo');
   $('body').addClass('hidden');
-  $('.imagen-desplegable5')
+  $('.imagen-desplegable5');
 });
 
 $('.transparent-box').click(function () {
@@ -158,7 +153,7 @@ $('.cross-flex').click(function () {
   $('.transparent-box').addClass('blocked');
   $('.transparent-box').removeClass('activo');
   $('body').removeClass('hidden');
-  $('.imagen-desplegable5')
+  $('.imagen-desplegable5');
 });
 
 // IMAGEN APPLEAD
@@ -170,7 +165,7 @@ $('.image6').click(function () {
   $('.transparent-box').removeClass('blocked');
   $('.transparent-box').addClass('activo');
   $('body').addClass('hidden');
-  $('.imagen-desplegable6')
+  $('.imagen-desplegable6');
 });
 
 $('.transparent-box').click(function () {
@@ -193,9 +188,7 @@ $('.cross-flex').click(function () {
   $('.transparent-box').addClass('blocked');
   $('.transparent-box').removeClass('activo');
   $('body').removeClass('hidden');
-  $('.imagen-desplegable6')
- 
-
+  $('.imagen-desplegable6');
 
   //- > CERRAR -> Quitar la case blocked
 });
@@ -206,12 +199,11 @@ $('.who-box').click(function () {
   console.log('click a caja who am i');
   $('.who-popup').removeClass('blocked');
 
-$('.welcome-box').addClass('blocked');
-$('.glass-container').addClass('blocked');
-$('.small-desc').addClass('blocked');
+  $('.welcome-box').addClass('blocked');
+  $('.glass-container').addClass('blocked');
+  $('.small-desc').addClass('blocked');
   $('.transparent-box').removeClass('blocked');
   $('.quote').addClass('blocked');
-
 });
 
 $('.cross').click(function () {
@@ -219,24 +211,13 @@ $('.cross').click(function () {
   $('.transparent-box').addClass('blocked');
   $('.transparent-box').removeClass('activo');
   $('.welcome-box').removeClass('blocked');
-$('.glass-container').removeClass('blocked');
-$('.small-desc').removeClass('blocked');
-$('.quote').removeClass('blocked');
-
+  $('.glass-container').removeClass('blocked');
+  $('.small-desc').removeClass('blocked');
+  $('.quote').removeClass('blocked');
 });
 
 // HOME CLICK FOR WORKS
 function scrollToSection() {
-  var section = document.getElementById("html-box");
+  var section = document.getElementById('html-box');
   section.scrollIntoView();
 }
-
-
-
-
-
-
-
-
-
-

@@ -5,9 +5,9 @@
 body {
   background: #800080;
   background: linear-gradient(
-      164deg,
-      rgba(75, 0, 130, 0.8463760504201681) 33%,
-      rgba(128, 0, 128, 0.7483368347338936) 92%
+    164deg,
+    rgba(75, 0, 130, 0.8463760504201681) 33%,
+    rgba(128, 0, 128, 0.7483368347338936) 92%
   );
   color: rgb(255, 255, 255);
   margin: 0;
@@ -170,23 +170,42 @@ h4 {
   text-shadow: 0 0 0px #620279, 0 0 0px #b800e6, 0 0 10px #b800e6,
     0 0 20px #b800e6, 0 0 30px #b800e6, 0 0 10px #b800e6, 0 0 8px #b800e6;
 }
-.close-an{
+.close-an {
   animation-name: closeim;
-  animation-duration: .5s;
+  animation-duration: 0.5s;
 }
 
-@keyframes closeim{
+.close-an-2 {
+  animation-name: closeim2;
+  animation-duration: 0.5s;
+}
+
+@keyframes closeim {
   0% {
     transform: scale(100%);
   }
 
   50% {
-    translate: 200px;
+    translate: 100px;
   }
 
   100% {
     transform: scale(0%);
-    translate: 200px;
+    translate: 0;
+  }
+}
+
+@keyframes closeim2 {
+  0% {
+    transform: scale(100%);
+  }
+
+  50% {
+  }
+
+  100% {
+    transform: scale(0%);
+    translate: 0;
   }
 }
 .menu-titles {
@@ -323,7 +342,7 @@ a {
   width: 65%;
 
   position: fixed;
-  top: 2%;
+  top: 15%;
 
   left: 250px;
   right: 0;
@@ -331,6 +350,10 @@ a {
   z-index: 100;
   animation-fill-mode: forwards;
   border-radius: 5px;
+  translate: 300px;
+}
+
+.scale-in {
   animation-name: scale;
   animation-iteration-count: 1;
   animation-duration: 0.8s;
@@ -341,56 +364,53 @@ a {
   width: 65%;
 
   position: fixed;
-  top: 2%;
+  top: 15%;
   left: 680px;
   right: 0;
   background-color: white;
   z-index: 100;
   animation-fill-mode: forwards;
   border-radius: 5px;
+}
+
+.scale-in-2 {
   animation-name: scale2;
   animation-iteration-count: 1;
   animation-duration: 0.8s;
   animation-fill-mode: forwards;
 }
+
 .imagen-desplegable3 {
   width: 65%;
 
   position: fixed;
-  top: 2%;
+  top: 15%;
   left: 250px;
   right: 0;
   background-color: white;
   z-index: 100;
   animation-fill-mode: forwards;
   border-radius: 5px;
-  animation-name: scale;
-  animation-iteration-count: 1;
-  animation-duration: 0.8s;
-  animation-fill-mode: forwards;
+  translate: 300px;
 }
 
 .imagen-desplegable4 {
   width: 65%;
 
   position: fixed;
-  top: 2%;
+  top: 15%;
   left: 680px;
   right: 0;
   background-color: #ffffff;
   z-index: 100;
   animation-fill-mode: forwards;
   border-radius: 5px;
-  animation-name: scale2;
-  animation-iteration-count: 1;
-  animation-duration: 0.8s;
-  animation-fill-mode: forwards;
 }
 .imagen-desplegable5 {
   width: 65%;
 
   position: fixed;
-  top: 2%;
+  top: 15%;
   right: 0;
 
   left: 250px;
@@ -399,26 +419,19 @@ a {
   z-index: 100;
   animation-fill-mode: forwards;
   border-radius: 5px;
-  animation-name: scale;
-  animation-iteration-count: 1;
-  animation-duration: 0.8s;
-  animation-fill-mode: forwards;
+  translate: 300px;
 }
 .imagen-desplegable6 {
   width: 65%;
 
   position: fixed;
-  top: 2%;
+  top: 15%;
   left: 680px;
   right: 0;
   background-color: #ffffff;
   z-index: 100;
   animation-fill-mode: forwards;
   border-radius: 5px;
-  animation-name: scale2;
-  animation-iteration-count: 1;
-  animation-duration: 0.8s;
-  animation-fill-mode: forwards;
 }
 .transparent-box {
   position: fixed;
@@ -447,6 +460,7 @@ a {
 @keyframes scale {
   0% {
     transform: scale(0%);
+    translate: 0px;
   }
 
   50% {
@@ -661,12 +675,14 @@ a {
   .imagen-desplegable6 {
     width: 75%;
     left: 390px;
+    top: 2%;
   }
   .imagen-desplegable1,
   .imagen-desplegable3,
   .imagen-desplegable5 {
     width: 76%;
     left: -45px;
+    top: 2%;
   }
 }
 
@@ -809,6 +825,9 @@ a {
 @media (max-width: 900px) {
   .first-web-box {
     width: 99%;
+  }
+  .grey {
+    filter: grayscale(0%);
   }
 
   .work-box {
